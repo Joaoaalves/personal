@@ -104,7 +104,7 @@ export default function Home() {
         <div className="flex flex-col items-start justify-start w-full">
           <h1 className="text-3xl font-bold">{t("projects.title")}</h1>
           <hr className="bg-black h-[1px] w-full xl:w-3/4  my-4"></hr>
-          <p className="font-medium w-full lg:max-w-[75%] 3xl:max-w-[850px] mb-8">
+          <p className="font-medium dark:text-neutral-400 w-full lg:max-w-[75%] 3xl:max-w-[850px] mb-8">
             <Trans i18nKey="projects.description" />
           </p>
           <Projects.Root>
