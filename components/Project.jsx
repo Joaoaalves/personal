@@ -1,15 +1,24 @@
-import { FaReact, FaCSS3Alt, FaHtml5, FaAws } from "react-icons/fa";
+import {
+  FaReact,
+  FaCss3,
+  FaHtml5,
+  FaAws,
+  FaChevronRight,
+} from "react-icons/fa";
 import { VscGithub } from "react-icons/vsc";
 import { IoLogoJavascript } from "react-icons/io5";
 import { TbBrandNextjs } from "react-icons/tb";
 import { RiOpenaiFill } from "react-icons/ri";
 import { FaPython } from "react-icons/fa6";
+import Button from "./Button";
 import {
   SiTailwindcss,
   SiMongodb,
   SiPostgresql,
   SiMysql,
   SiRadixui,
+  SiFlask,
+  SiRedis,
 } from "react-icons/si";
 import { RxStitchesLogo } from "react-icons/rx";
 
@@ -69,7 +78,7 @@ const tecnologies = {
   ),
   css: (
     <Icon text="CSS">
-      <FaCSS3Alt className="text-2xl text-blue-400" />
+      <FaCss3 className="text-2xl text-blue-400" />
     </Icon>
   ),
   html: (
@@ -107,11 +116,23 @@ const tecnologies = {
       <RxStitchesLogo className="text-2xl text-black dark:text-white" />
     </Icon>
   ),
+  flask: (
+    <Icon text="Flask">
+      <SiFlask className="text-2xl text-black dark:text-white" />
+    </Icon>
+  ),
+  redis: (
+    <Icon text="Redis">
+      <SiRedis className="text-2xl text-red-400" />
+    </Icon>
+  ),
 };
 
 function Root({ children }) {
   return (
-    <ul className="flex flex-col items-start justify-start w-full xl:w-3/4 lg:max-w-[45vw] gap-y-8 transition duration-300 ease-in-out">
+    <ul
+      className="flex flex-col items-start justify-start w-full gap-y-8 transition duration-300 ease-in-out 2xl:w-3/4 lg:max-w-[45vw]"
+    >
       {children}
     </ul>
   );
@@ -119,7 +140,7 @@ function Root({ children }) {
 
 function Item({ children }) {
   return (
-    <li className="flex flex-col sm:flex-row items-start justify-center gap-y-4 xl:gap-y-0 gap-x-4 w-full p-6 bg-neutral-100 dark:bg-neutral-900 rounded-md shadow-[0px_0px_8px_2px_rgba(0,0,0,0.4)] dark:shadow-[0px_0px_8px_2px_rgba(255,255,255,0.03)]">
+    <li className="flex flex-col items-center justify-center xl:grid xl:grid-cols-[14rem_1fr] xl:grid-rows-1 gap-y-4 xl:gap-y-0 xl:gap-x-8 w-full pt-6 xl:p-6 bg-neutral-100 dark:bg-neutral-900 rounded-md shadow-[0px_0px_8px_2px_rgba(0,0,0,0.4)] dark:shadow-[0px_0px_8px_2px_rgba(255,255,255,0.03)]">
       {children}
     </li>
   );
@@ -127,16 +148,18 @@ function Item({ children }) {
 
 function Image({ image }) {
   return (
-    <div className="w-full xl:max-w-64 h-64 bg-cover bg-bottom rounded bg-clip-content" style={{
-      backgroundImage: `url(${image})`,
-    }}>
-    </div>
+    <div
+      className="w-3/4 xl:w-full h-64 bg-contain bg-no-repeat bg-bottom lg:bg-center rounded bg-clip-content drop-shadow-[0px_0px_6px_rgba(0,0,0,0.4)] dark:drop-shadow-[0px_0px_4px_rgba(255,255,255,0.15)]"
+      style={{
+        backgroundImage: `url(${image})`,
+      }}
+    ></div>
   );
 }
 
 function Content({ children }) {
   return (
-    <div className="flex flex-col items-center text-center xl:text-start xl:items-start justify-start gap-y-2">
+    <div className="flex flex-col items-center text-center xl:text-start xl:items-start justify-start gap-y-2 h-full">
       {children}
     </div>
   );
@@ -144,19 +167,19 @@ function Content({ children }) {
 
 function Title({ children }) {
   return (
-    <h3 className="text-neutral-800 dark:text-neutral-50 text-2xl font-bold">
+    <h3 className="text-neutral-800 dark:text-neutral-50 text-2xl font-bold max-w-[90%]">
       {children}
     </h3>
   );
 }
 
 function Description({ children }) {
-  return <p className="text-neutral-900 dark:text-white text-md">{children}</p>;
+  return <p className="text-neutral-900 dark:text-white text-md mt-8 max-w-[90%]">{children}</p>;
 }
 
 function Tecnologies({ children }) {
   return (
-    <div className="flex flex-wrap items-center justify-start gap-x-2 mt-auto">
+    <div className="flex flex-wrap items-center justify-center xl:justify-start gap-2 mt-8 xl:mt-auto">
       {children}
     </div>
   );
@@ -180,7 +203,7 @@ function Details({ children }) {
 
 function Tags({ children }) {
   return (
-    <div className="flex flex-wrap items-center justify-start gap-x-2 mt-auto">
+    <div className="flex flex-wrap items-center justify-center xl:justify-start gap-2 max-w-[90%] mt-8">
       {children}
     </div>
   );
@@ -188,21 +211,26 @@ function Tags({ children }) {
 
 function Tag({ children }) {
   return (
-    <span className="p-2 text-sm rounded-md bg-neutral-50 dark:border-[1px] dark:border-white dark:bg-neutral-900 text-black dark:text-white shadow">
+    <span className="p-2 text-sm rounded-md border-[1px] border-neutral-400 font-medium dark:border-neutral-600 dark:bg-neutral-900 text-black dark:text-white">
       {children}
     </span>
   );
 }
 
-function Link({ href, children }) {
+function Buttons({children}){
   return (
-    <a
-      href={href}
-      target="_blank"
-      className="px-4 py-2 dark:bg-black dark:text-white bg-gray-800 text-white rounded min-w-32 text-center xl:self-end"
-    >
+    <div className="flex flex-col xl:flex-row xl:flex-wrap gap-y-4 items-center justify-between w-full gap-x-4 mt-auto xl:mt-4 mb-4 xl:mb-0">
       {children}
-    </a>
+    </div>
+  );
+
+}
+
+function View({ href, children }) {
+  return (
+    <Button href={href}>
+      {children}
+    </Button>
   );
 }
 
@@ -218,5 +246,6 @@ export default {
   Tags,
   Tag,
   Details,
-  Link,
+  Buttons,
+  View,
 };
