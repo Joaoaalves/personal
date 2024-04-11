@@ -2,14 +2,14 @@ import Skill from "./Skill";
 import { useTranslation } from "next-i18next";
 const skills = [
   { tec: "Python", percentage: 90, color: "#31a742" },
-  { tec: "Flask", percentage: 80, color: "#00a8ff" },
   { tec: "React", percentage: 80, color: "#00a8ff" },
+  { tec: "Flask", percentage: 75, color: "#00a8ff" },
   { tec: "MySQL", percentage: 70, color: "#00a8ff" },
   { tec: "Node.js", percentage: 70, color: "#00a8ff" },
   { tec: "MongoDB", percentage: 70, color: "#00a8ff" },
   { tec: "Express", percentage: 65, color: "#00a8ff" },
-  { tec: "PHP", percentage: 50, color: "#ffde57" },
-  { tec: "PostgreSQL", percentage: 50, color: "#ffde57" },
+  { tec: "PHP", percentage: 60, color: "#ffde57" },
+  { tec: "PostgreSQL", percentage: 60, color: "#ffde57" },
 ];
 
 export default function Skills() {
