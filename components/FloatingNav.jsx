@@ -11,7 +11,10 @@ import {
 import { RxHamburgerMenu } from "react-icons/rx";
 import { IoCodeSlashOutline, IoDocumentOutline,IoHomeOutline } from "react-icons/io5";
 import { CiMail } from "react-icons/ci";
+import { useTranslation } from "react-i18next";
 export default function FloatingNav() {
+  const {t} = useTranslation();
+
   return (
     <NavigationMenu>
       <NavigationMenuList>
@@ -23,19 +26,19 @@ export default function FloatingNav() {
             <div className="flex flex-col items-start gap-y-4 p-6 px-16 sm:px-24">
             <NavigationMenuLink className="flex items-center justify-center" href="/">
                 <IoHomeOutline className="inline-block text-lg me-2" />
-                Home
+                {t("sidepanel.home")}
               </NavigationMenuLink>
               <NavigationMenuLink className="flex items-center justify-center" href="/projects">
                 <IoCodeSlashOutline className="inline-block text-lg me-2" />
-                Projects
+                {t("sidepanel.projects")}
               </NavigationMenuLink>
               <NavigationMenuLink className="flex items-center justify-center" href="/cv">
                 <IoDocumentOutline className="inline-block text-lg me-2" />
-                CV
+                {t("sidepanel.cv")}
               </NavigationMenuLink>
               <NavigationMenuLink className="flex items-center justify-center" href="/contact">
                 <CiMail className="inline-block text-lg me-2" />
-                Contact
+                {t("sidepanel.contact")}
               </NavigationMenuLink>
             </div>
           </NavigationMenuContent>
