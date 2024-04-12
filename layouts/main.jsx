@@ -1,8 +1,9 @@
-import { Source_Code_Pro } from "next/font/google";
+import { Montserrat } from "next/font/google";
 import TopBar from "@/components/TopBar";
 import SidePanel from "@/components/SidePanel";
-const font = Source_Code_Pro({ subsets: ["latin"] });
+const font = Montserrat({ subsets: ["latin"] });
 import { Toaster } from "@/components/ui/toaster";
+
 export default function Layout({ children }) {
   return (
     <main
