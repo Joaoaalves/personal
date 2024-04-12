@@ -1,5 +1,6 @@
 import Skill from "./Skill";
 import { useTranslation } from "next-i18next";
+import { Trans } from "next-i18next";
 const skills = [
   { tec: "Python", percentage: 90, color: "#31a742" },
   { tec: "React", percentage: 80, color: "#00a8ff" },
@@ -26,25 +27,25 @@ export default function Skills() {
         <h5 className="text-xl font-bold mb-4">{t("skills.frontend.title")}</h5>
         <p className="text-neutral-800 dark:text-neutral-400 mb-12">
           &emsp;&emsp;
-          {t("skills.frontend.text")}
+          <Trans i18nKey="skills.frontend.text" />
         </p>
 
         <h5 className="text-xl font-bold mb-4">{t("skills.backend.title")}</h5>
         <p className="text-neutral-800 dark:text-neutral-400 mb-12">
           &emsp;&emsp;
-          {t("skills.backend.text")}
+          <Trans i18nKey="skills.backend.text" />
         </p>
 
         <h5 className="text-xl font-bold mb-4">{t("skills.devops.title")}</h5>
         <p className="text-neutral-800 dark:text-neutral-400 mb-12">
           &emsp;&emsp;
-          {t("skills.devops.text")}
+          <Trans i18nKey="skills.devops.text" />
         </p>
 
         <h5 className="text-xl font-bold mb-4">{t("skills.others.title")}</h5>
         <p className="text-neutral-800 dark:text-neutral-400 mb-12">
           &emsp;&emsp;
-          {t("skills.others.text")}
+          <Trans i18nKey="skills.others.text" />
         </p>
       </div>
       <div className="flex flex-col items-center xl:items-end justify-center gap-y-6 w-full xl:w-1/3">

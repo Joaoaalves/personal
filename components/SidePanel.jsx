@@ -37,7 +37,7 @@ export default function SidePanel() {
   };
 
   return (
-    <aside className="hidden lg:flex fixed z-10 lg:w-[30vw] xl:w-[20vw] xl:max-w-80 bg-neutral-100 dark:bg-neutral-900 lg:flex-col items-center justify-center lg:py-8 h-20 lg:min-h-scren lg:h-screen  left-0 top-0 border-r-2 dark:border-none">
+    <aside className="hidden lg:flex fixed z-10 lg:w-[30vw] xl:w-[20vw] xl:max-w-80 bg-slate-50 dark:bg-black dark:border-neutral-900  lg:flex-col items-center justify-center lg:py-8 h-20 lg:min-h-scren lg:h-screen  left-0 top-0 border-r-[1px]">
       <div
         className="group lg:flex flex-col items-center justify-center gap-y-8 cursor-pointer"
         onClick={() => handleNavigate("/")}
@@ -90,13 +90,7 @@ export default function SidePanel() {
         >
           <IoIosMail />
         </Link>
-        <Link
-          className="text-2xl hover:text-violet-600 dark:hover:text-violet-500 transition duration-300 ease-in-out text-black dark:text-white"
-          href="https://www.linkedin.com/in/jo%C3%A3o-vitor-alves-de-araujo-0b7b771b4/"
-          target="_blank"
-        >
-          <IoLogoLinkedin />
-        </Link>
+
       </div>
     </aside>
   );

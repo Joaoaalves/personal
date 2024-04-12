@@ -138,7 +138,7 @@ function Root({ children }) {
 
 function Item({ children }) {
   return (
-    <li className="flex flex-col items-center justify-center xl:grid xl:grid-cols-[14rem_1fr] xl:grid-rows-1 gap-y-4 xl:gap-y-0 xl:gap-x-8 w-full pt-6 xl:p-6 bg-neutral-100 dark:bg-neutral-900 rounded-md shadow-[0px_0px_8px_2px_rgba(0,0,0,0.4)] dark:shadow-[0px_0px_8px_2px_rgba(255,255,255,0.03)]">
+    <li className="flex flex-col items-center justify-center xl:grid xl:grid-cols-[14rem_1fr] xl:grid-rows-1 gap-y-4 xl:gap-y-0 xl:gap-x-8 w-full pt-6 xl:p-6 bg-slate-50 dark:bg-neutral-900 rounded-md shadow-[0px_0px_8px_2px_rgba(0,0,0,0.4)] dark:shadow-[0px_0px_8px_2px_rgba(255,255,255,0.03)]">
       {children}
     </li>
   );

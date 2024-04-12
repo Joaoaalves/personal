@@ -11,7 +11,7 @@ export default function Contact() {
   const { t } = useTranslation();
   return (
     <Layout>
-      <h1 className="text-3xl mb-8 flex gap-x-4 font-bold dark:font-thin text-black dark:text-white">
+      <h1 className="text-2xl lg:text-3xl lg:mb-8 max-w-[90vw] flex flex-wrap items-center justify-center gap-4 font-bold dark:font-thin text-black dark:text-white text-center">
         {t("contact.title")} <PiHandWavingThin />
       </h1>
       <div className="flex flex-col items-center xl:flex-row xl:items-start justify-center w-full gap-x-8 p-8 2xl:px-16">
@@ -26,10 +26,7 @@ export default function Contact() {
               <IoLogoGithub />
               <span>Github</span>
             </Button>
-            <Button href="https://www.linkedin.com/in/jo%C3%A3o-vitor-alves-de-araujo-0b7b771b4/">
-              <IoLogoLinkedin />
-              <span>Linkedin</span>
-            </Button>
+
             <div>
               <h3 className="text-xl mt-2 mb-4">E-mail</h3>
               <span className="font-bold">contact@joaoalves.me</span>

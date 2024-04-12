@@ -6,7 +6,6 @@ import {
   NavigationMenuLink,
   NavigationMenuList,
   NavigationMenuTrigger,
-  NavigationMenuViewport,
 } from "@/components/ui/navigation-menu";
 import { RxHamburgerMenu } from "react-icons/rx";
 import {
@@ -16,6 +15,20 @@ import {
 } from "react-icons/io5";
 import { CiMail } from "react-icons/ci";
 import { useTranslation } from "react-i18next";
+import { useRouter } from "next/router";
+
+const MenuLink = ({ children, href}) => {
+  const router = useRouter();
+  return (
+    <NavigationMenuLink
+      className={`flex items-center justify-center ${router.pathname === href ? "text-violet-600" : ""}`}
+      href={href}
+    >
+      {children}
+    </NavigationMenuLink>
+  );
+}
+
 export default function FloatingNav() {
   const { t } = useTranslation();
 
@@ -27,35 +40,24 @@ export default function FloatingNav() {
             <RxHamburgerMenu className="text-2xl" />
           </NavigationMenuTrigger>
           <NavigationMenuContent>
-            <div className="flex flex-col items-start gap-y-4 p-6 px-16 sm:px-24">
-              <NavigationMenuLink
-                className="flex items-center justify-center"
-                href="/"
-              >
+            <div className="flex flex-col items-start gap-y-4 p-6 w-[90vw] sm:w-[95vw]">
+
+              <MenuLink href="/">
                 <IoHomeOutline className="inline-block text-lg me-2" />
                 {t("sidepanel.home")}
-              </NavigationMenuLink>
-              <NavigationMenuLink
-                className="flex items-center justify-center"
-                href="/projects"
-              >
+              </MenuLink>
+              <MenuLink href="/projects">
                 <IoCodeSlashOutline className="inline-block text-lg me-2" />
                 {t("sidepanel.projects")}
-              </NavigationMenuLink>
-              <NavigationMenuLink
-                className="flex items-center justify-center"
-                href="/cv"
-              >
+              </MenuLink>
+              <MenuLink href="/cv">
                 <IoDocumentOutline className="inline-block text-lg me-2" />
                 {t("sidepanel.CV")}
-              </NavigationMenuLink>
-              <NavigationMenuLink
-                className="flex items-center justify-center"
-                href="/contact"
-              >
+              </MenuLink>
+              <MenuLink href="/contact">
                 <CiMail className="inline-block text-lg me-2" />
                 {t("sidepanel.contact")}
-              </NavigationMenuLink>
+              </MenuLink>
             </div>
           </NavigationMenuContent>
         </NavigationMenuItem>
