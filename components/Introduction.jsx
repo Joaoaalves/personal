@@ -32,6 +32,11 @@ const timeline = [
     title: "tl.item6.title",
     text: "tl.item6.text",
   },
+  {
+    date: "tl.item7.date",
+    title: "tl.item7.title",
+    text: "tl.item7.text",
+  },
 ];
 
 export default function Introduction() {
