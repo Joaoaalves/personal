@@ -12,13 +12,13 @@ export default function Contact() {
   return (
     <Layout>
       <h1 className="text-3xl mb-8 flex gap-x-4 font-bold dark:font-thin text-black dark:text-white">
-        {t('contact.title')} <PiHandWavingThin />
+        {t("contact.title")} <PiHandWavingThin />
       </h1>
       <div className="flex flex-col items-center xl:flex-row xl:items-start justify-center w-full gap-x-8 p-8 2xl:px-16">
         <ContactForm />
         <div className="flex flex-col items-center text-center w-2/5 mt-16 xl:mt-0 xl:ms-auto">
           <h2 className="text-2xl dark:text-white font-normal">
-            {t('contact.socialnetworks')}
+            {t("contact.socialnetworks")}
           </h2>
 
           <div className="flex flex-col items-center mt-8 gap-y-4">
@@ -32,9 +32,7 @@ export default function Contact() {
             </Button>
             <div>
               <h3 className="text-xl mt-2 mb-4">E-mail</h3>
-              <span className="font-bold">
-                contact@joaoalves.me
-              </span>
+              <span className="font-bold">contact@joaoalves.me</span>
             </div>
           </div>
         </div>

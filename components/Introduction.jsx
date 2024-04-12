@@ -46,15 +46,19 @@ export default function Introduction() {
           {t("home.introduction.title")}
         </h4>
         <p className="mb-6 dark:text-neutral-400">
-          &emsp;&emsp;<Trans i18nKey="home.introduction.paragraph1" />
+          &emsp;&emsp;
+          <Trans i18nKey="home.introduction.paragraph1" />
         </p>
         <p className="mb-6 dark:text-neutral-400">
-          &emsp;&emsp;<Trans i18nKey="home.introduction.paragraph2" />
+          &emsp;&emsp;
+          <Trans i18nKey="home.introduction.paragraph2" />
         </p>
-        <p className="mb-6 dark:text-neutral-400">&emsp;&emsp;
+        <p className="mb-6 dark:text-neutral-400">
+          &emsp;&emsp;
           <Trans i18nKey="home.introduction.paragraph3" />
         </p>
-        <p className="mb-6 dark:text-neutral-400">&emsp;&emsp;
+        <p className="mb-6 dark:text-neutral-400">
+          &emsp;&emsp;
           <Trans i18nKey="home.introduction.paragraph4" />
         </p>
       </div>

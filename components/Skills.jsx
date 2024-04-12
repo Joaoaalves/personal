@@ -21,51 +21,34 @@ export default function Skills() {
     >
       <div className="w-full xl:w-1/2">
         <h4 className="font-bold text-3xl mb-4">Skills</h4>
-        <p className="mb-12">
-          {t("skills.text")}
-        </p>
+        <p className="mb-12">{t("skills.text")}</p>
 
-        <h5 className="text-xl font-bold mb-4">
-          {t('skills.frontend.title')}
-        </h5>
+        <h5 className="text-xl font-bold mb-4">{t("skills.frontend.title")}</h5>
         <p className="text-neutral-800 dark:text-neutral-400 mb-12">
           &emsp;&emsp;
-          {t('skills.frontend.text')}
+          {t("skills.frontend.text")}
         </p>
 
-
-        <h5 className="text-xl font-bold mb-4">
-          {t('skills.backend.title')}
-        </h5>
+        <h5 className="text-xl font-bold mb-4">{t("skills.backend.title")}</h5>
         <p className="text-neutral-800 dark:text-neutral-400 mb-12">
           &emsp;&emsp;
-          {t('skills.backend.text')}
+          {t("skills.backend.text")}
         </p>
 
-
-        <h5 className="text-xl font-bold mb-4">
-          {t('skills.devops.title')}
-        </h5>
+        <h5 className="text-xl font-bold mb-4">{t("skills.devops.title")}</h5>
         <p className="text-neutral-800 dark:text-neutral-400 mb-12">
           &emsp;&emsp;
-          {t('skills.devops.text')}
+          {t("skills.devops.text")}
         </p>
 
-
-        <h5 className="text-xl font-bold mb-4">
-          {t('skills.others.title')}
-        </h5>
+        <h5 className="text-xl font-bold mb-4">{t("skills.others.title")}</h5>
         <p className="text-neutral-800 dark:text-neutral-400 mb-12">
           &emsp;&emsp;
-          {t('skills.others.text')}
+          {t("skills.others.text")}
         </p>
-
-
       </div>
       <div className="flex flex-col items-center xl:items-end justify-center gap-y-6 w-full xl:w-1/3">
-        <h4 className="text-2xl">
-          {t("skills.proficiency")}
-        </h4>
+        <h4 className="text-2xl">{t("skills.proficiency")}</h4>
         {skills.map((skill, index) => (
           <Skill
             key={index}

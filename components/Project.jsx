@@ -130,9 +130,7 @@ const tecnologies = {
 
 function Root({ children }) {
   return (
-    <ul
-      className="flex flex-col items-start justify-start w-full gap-y-8 transition duration-300 ease-in-out 2xl:w-3/4 lg:max-w-[45vw]"
-    >
+    <ul className="flex flex-col items-start justify-start w-full gap-y-8 transition duration-300 ease-in-out 2xl:w-3/4 lg:max-w-[45vw]">
       {children}
     </ul>
   );
@@ -174,7 +172,11 @@ function Title({ children }) {
 }
 
 function Description({ children }) {
-  return <p className="text-neutral-900 dark:text-white text-md mt-8 max-w-[90%]">{children}</p>;
+  return (
+    <p className="text-neutral-900 dark:text-white text-md mt-8 max-w-[90%]">
+      {children}
+    </p>
+  );
 }
 
 function Tecnologies({ children }) {
@@ -217,21 +219,16 @@ function Tag({ children }) {
   );
 }
 
-function Buttons({children}){
+function Buttons({ children }) {
   return (
-    <div className="flex flex-col xl:flex-row xl:flex-wrap gap-y-4 items-center justify-between w-full gap-x-4 mt-auto xl:mt-4 mb-4 xl:mb-0">
+    <div className="flex flex-col xl:flex-row xl:flex-wrap gap-y-4 items-center justify-between w-full gap-x-4 mt-auto xl:mt-4 mb-4 xl:mb-0 last:ms-auto">
       {children}
     </div>
   );
-
 }
 
-function View({ href, children }) {
-  return (
-    <Button href={href}>
-      {children}
-    </Button>
-  );
+function View({ href, children, className }) {
+  return <Button href={href} className={className}>{children}</Button>;
 }
 
 export default {

@@ -66,10 +66,10 @@
   }
 }
 
-svg.lucide.lucide-chevron-down{
+svg.lucide.lucide-chevron-down {
   display: none;
 }
 
-p > strong{
+p > strong {
   @apply text-black dark:text-white;
 }

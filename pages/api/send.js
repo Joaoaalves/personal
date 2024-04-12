@@ -13,7 +13,7 @@ export default async function handler(req, res) {
         subject: "Contato pelo site",
         text: `Nome: ${name}\nEmail: ${email}\n\nMensagem: ${message}`,
       });
-  
+
       res.status(200).json({ data });
     } catch (error) {
       res.status(500).json({ error });

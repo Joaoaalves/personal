@@ -45,42 +45,50 @@ export default function ContactForm() {
         "Content-Type": "application/json",
       },
       body: JSON.stringify(data),
-    }).then((res) => {
-      if (res.ok) {
+    })
+      .then((res) => {
+        if (res.ok) {
+          toast({
+            title: t("contact.success"),
+            description: (
+              <p className="mt-2 w-[340px] rounded-md dark:bg-slate-950 bg-white p-4">
+                {t("contact.success-message")}
+              </p>
+            ),
+          });
+        }
+      })
+      .catch(() => {
         toast({
-          title: t("contact.success"),
+          title: t("contact.error"),
           description: (
             <p className="mt-2 w-[340px] rounded-md dark:bg-slate-950 bg-white p-4">
-              {t("contact.success-message")}
+              {t("contact.error-message")}
             </p>
           ),
         });
-      }
-    }).catch(() => {
-      toast({
-        title: t("contact.error"),
-        description: (
-          <p className="mt-2 w-[340px] rounded-md dark:bg-slate-950 bg-white p-4">
-            {t("contact.error-message")}
-          </p>
-        ),
       });
-    });
   }
 
   return (
     <Form {...form}>
-      <form onSubmit={form.handleSubmit(onSubmit)} className="w-full xl:w-3/5 space-y-6">
+      <form
+        onSubmit={form.handleSubmit(onSubmit)}
+        className="w-full xl:w-3/5 space-y-6"
+      >
         <FormField
           control={form.control}
           name="name"
           render={({ field }) => (
             <FormItem>
               <FormLabel>
-                {t("contact.name")} <span className="text-neutral-800 dark:text-neutral-400">*</span>
+                {t("contact.name")}{" "}
+                <span className="text-neutral-800 dark:text-neutral-400">
+                  *
+                </span>
               </FormLabel>
               <FormControl>
-                <Input placeholder={t('contact.name.placeholder')} {...field} />
+                <Input placeholder={t("contact.name.placeholder")} {...field} />
               </FormControl>
               <FormMessage className="dark:text-red-600" />
             </FormItem>
@@ -92,10 +100,16 @@ export default function ContactForm() {
           render={({ field }) => (
             <FormItem>
               <FormLabel>
-                {t("contact.email")} <span className="text-neutral-800 dark:text-neutral-400">*</span>
+                {t("contact.email")}{" "}
+                <span className="text-neutral-800 dark:text-neutral-400">
+                  *
+                </span>
               </FormLabel>
               <FormControl>
-                <Input placeholder={t('contact.email.placeholder')} {...field} />
+                <Input
+                  placeholder={t("contact.email.placeholder")}
+                  {...field}
+                />
               </FormControl>
               <FormMessage className="dark:text-red-600" />
             </FormItem>
@@ -107,11 +121,14 @@ export default function ContactForm() {
           render={({ field }) => (
             <FormItem>
               <FormLabel>
-                {t("contact.message")} <span className="text-neutral-800 dark:text-neutral-400">*</span>
+                {t("contact.message")}{" "}
+                <span className="text-neutral-800 dark:text-neutral-400">
+                  *
+                </span>
               </FormLabel>
               <FormControl>
                 <Textarea
-                  placeholder={t('contact.message.placeholder')}
+                  placeholder={t("contact.message.placeholder")}
                   className="resize-none h-80"
                   {...field}
                 />
@@ -121,7 +138,7 @@ export default function ContactForm() {
           )}
         />
         <Button className="w-full" type="submit">
-          {t('contact.send')}
+          {t("contact.send")}
         </Button>
       </form>
     </Form>

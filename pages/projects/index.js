@@ -44,7 +44,7 @@ const projects = [
   {
     title: "projects.spotify-clone.title",
     description: "projects.spotify-clone.description",
-    link: "https://spotify-clone-psi.vercel.app/",
+    link: "",
     code: "https://github.com/Joaoaalves/spotify-clone",
     image:
       "https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Spotify_logo_without_text.svg/2048px-Spotify_logo_without_text.svg.png",
@@ -135,13 +135,19 @@ export default function Home() {
                     </Projects.Tags>
                   </Projects.Details>
                   <Projects.Buttons>
+                    {project.link && (
                       <Projects.View href={project.link}>
-                        {t("projects.view-project")} <IoArrowRedoOutline className="ms-2"/>
+                        {t("projects.view-project")}{" "}
+                        <IoArrowRedoOutline className="ms-2" />
                       </Projects.View>
-                      <Projects.View href={project.code}>
-                        {t("projects.view-code")} <IoCodeSlashOutline className="ms-2"/>
+                    )}
+                    {project.code && (
+                      <Projects.View className="ms-auto" href={project.code}>
+                        {t("projects.view-code")}{" "}
+                        <IoCodeSlashOutline className="ms-2" />
                       </Projects.View>
-                    </Projects.Buttons>
+                    )}
+                  </Projects.Buttons>
                 </Projects.Content>
               </Projects.Item>
             ))}
