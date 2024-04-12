@@ -3,8 +3,30 @@ import { useRouter } from "next/router";
 import { IoIosMail, IoLogoGithub, IoLogoLinkedin } from "react-icons/io";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { useTranslation } from "next-i18next";
-import { IoCodeSlashOutline, IoDocumentOutline } from "react-icons/io5";
+import { IoCodeSlashOutline, IoDocumentOutline, IoHomeOutline } from "react-icons/io5";
 import { CiMail } from "react-icons/ci";
+
+
+const NavItem = ({ children, url }) => {
+  const router = useRouter();
+  
+  const handleNavigate = (url) => {
+    router.push(url);
+  }
+
+
+  return (
+    <li
+      onClick={() => handleNavigate(url)}
+      className={`group transition duration-300 ease-in-out cursor-pointer p-4 w-full ${router.pathname === url ? "text-violet-600" : "text-black dark:text-white"}`}
+    >
+      <div className="inline-block font-semibold text-lg">
+        {children}
+        <span className="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-violet-500"></span>
+      </div>
+    </li>
+  );
+}
 
 export default function SidePanel() {
   const router = useRouter();
@@ -36,36 +58,22 @@ export default function SidePanel() {
       </div>
 
       <ul className="flex lg:flex-col items-start justify-center text-black dark:text-white lg:mt-12 lg:px-8">
-        <li
-          onClick={() => handleNavigate("/projects")}
-          className="group transition duration-300 ease-in-out cursor-pointer p-4 w-full"
-        >
-          <div className="inline-block font-semibold text-lg">
-            <IoCodeSlashOutline className="inline-block text-2xl me-4 mb-1" />
-            {t("sidepanel.projects")}
-            <span className="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-violet-500"></span>
-          </div>
-        </li>
-        <li
-          onClick={() => handleNavigate("/cv")}
-          className="group transition duration-300 ease-in-out cursor-pointer p-4 w-full"
-        >
-          <div className="inline-block font-semibold text-lg">
-            <IoDocumentOutline className="inline-block text-2xl me-4 mb-1" />
-            Curriculum Vitae
-            <span className="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-violet-500"></span>
-          </div>
-        </li>
-        <li
-          onClick={() => handleNavigate("/contact")}
-          className="group transition duration-300 ease-in-out cursor-pointer p-4 w-full"
-        >
-          <div className="inline-block font-semibold text-lg">
-            <CiMail className="inline-block text-2xl me-4 mb-1" />
-            {t("sidepanel.contact")}
-            <span className="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-violet-500"></span>
-          </div>
-        </li>
+        <NavItem url="/">
+          <IoHomeOutline className="inline-block text-2xl me-4 mb-1" />
+          {t("sidepanel.home")}
+        </NavItem>
+        <NavItem url="/projects">
+          <IoCodeSlashOutline className="inline-block text-2xl me-4 mb-1" />
+          {t("sidepanel.projects")}  
+        </NavItem>
+        <NavItem url="/cv">
+          <IoDocumentOutline className="inline-block text-2xl me-4 mb-1" />
+          Curriculum Vitae
+        </NavItem>
+        <NavItem url="/contact">
+          <CiMail className="inline-block text-2xl me-4 mb-1" />
+          {t("sidepanel.contact")}
+        </NavItem>
       </ul>
 
       <div className="lg:flex items-center justify-center gap-x-8 w-full mt-auto border-t-[1px] pt-8 border-neutral-300 dark:border-neutral-800">
