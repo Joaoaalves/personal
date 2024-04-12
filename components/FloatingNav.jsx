@@ -34,7 +34,7 @@ export default function FloatingNav() {
               </NavigationMenuLink>
               <NavigationMenuLink className="flex items-center justify-center" href="/cv">
                 <IoDocumentOutline className="inline-block text-lg me-2" />
-                {t("sidepanel.cv")}
+                {t("sidepanel.CV")}
               </NavigationMenuLink>
               <NavigationMenuLink className="flex items-center justify-center" href="/contact">
                 <CiMail className="inline-block text-lg me-2" />
