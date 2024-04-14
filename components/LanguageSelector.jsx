@@ -34,6 +34,7 @@ export default function LanguageSelector() {
                   svg
                   style={{ width: "1.5em", height: "1.5em" }}
                   className="me-4"
+                  alt="Brazilian flag"
                 />{" "}
                 Português{" "}
               </>
@@ -44,6 +45,7 @@ export default function LanguageSelector() {
                   svg
                   style={{ width: "1.5em", height: "1.5em" }}
                   className="me-4"
+                  alt="English flag"
                 />{" "}
                 English{" "}
               </>

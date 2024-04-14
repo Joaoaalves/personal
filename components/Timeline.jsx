@@ -6,9 +6,9 @@ function Root({ children }) {
 
 function Item({ children }) {
   return (
-    <div className="grid grid-cols-[1fr_15px] grid-rows-1 items-center gap-x-2 w-full">
+    <li className="grid grid-cols-[1fr_15px] grid-rows-1 items-center gap-x-2 w-full">
       {children}
-    </div>
+    </li>
   );
 }
 
