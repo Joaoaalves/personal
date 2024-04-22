@@ -51,7 +51,7 @@
   "skills.proficiency": "Tecnologias com maior proficiência",
   "projects.hit-the-dot.title": "Hit The Dot",
   "projects.hit-the-dot.description": "Site para 'ponto eletrônico' com feature de autenticação e controle de ponto. Desenvolvido com Python, Flask, MySQL, Redis, HTML5 e CSS3.",
-  "projects.maryna-carvalho.title": "Maryna Carvalho Law Firm",
+  "projects.maryna-carvalho.title": "Maryna Carvalho Advocacia",
   "projects.maryna-carvalho.description": "Site para escritório de advocacia, com feature de contato. Desenvolvido com Next.js e TailwindCSS. Contato feito via e-mail com ReSend.",
   "projects.corpo-e-mente.title": "Corpo e Mente Clinical Space",
   "projects.corpo-e-mente.description": "Site para clínica psicológica com feature de agendamento e autenticação com vários níveis de permissão. Desenvolvido com Next.js e TailwindCSS(ShadCN). Agendamento implementado completamente do zero.",
