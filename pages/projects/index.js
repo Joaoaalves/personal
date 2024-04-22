@@ -142,7 +142,7 @@ export default function Home() {
                       </Projects.View>
                     )}
                     {project.code && (
-                      <Projects.View className="ms-auto" href={project.code}>
+                      <Projects.View className="xl:ms-auto" href={project.code}>
                         {t("projects.view-code")}{" "}
                         <IoCodeSlashOutline className="ms-2" />
                       </Projects.View>

@@ -221,7 +221,7 @@ function Tag({ children }) {
 
 function Buttons({ children }) {
   return (
-    <div className="flex flex-col xl:flex-row xl:flex-wrap gap-y-4 items-center justify-between w-full gap-x-4 mt-auto xl:mt-4 mb-4 xl:mb-0 last:ms-auto">
+    <div className="flex flex-col xl:flex-row xl:flex-wrap gap-y-4 items-center  justify-between w-full gap-x-4 mt-auto xl:mt-4 mb-4 xl:mb-0 last:ms-auto">
       {children}
     </div>
   );
