@@ -2,7 +2,7 @@ import Layout from "@/layouts/main";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { useTranslation } from "next-i18next";
 import Certification from "@/components/Certification";
-import { certifications } from "./utils";
+import { certifications } from "@/lib/certifications";
 
 export default function Home() {
   const { t } = useTranslation();
