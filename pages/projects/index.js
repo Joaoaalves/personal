@@ -18,7 +18,7 @@ const projects = [
     link: "https://github.com/Joaoaalves/hit-the-dot",
     code: "https://github.com/Joaoaalves/hit-the-dot",
     image:
-      "https://raw.githubusercontent.com/Joaoaalves/hit-the-dot/main/app/static/images/logo-high-quality.svg?token=GHSAT0AAAAAACO56MCIOAUNUURRANP3RI5GZP2EPQQ",
+      "https://raw.githubusercontent.com/Joaoaalves/hit-the-dot/main/app/static/images/logo-high-qualit y.svg?token=GHSAT0AAAAAACO56MCIOAUNUURRANP3RI5GZP2EPQQ",
     tecnologies: ["python", "flask", "mysql", "html", "css", "redis"],
     tags: ["Backend", "Web", "Database", "Frontend"],
   },
@@ -177,7 +177,7 @@ export default function Home() {
                       ]);
                     }
                   }}
-                  className={`px-4 py-2 transition duration-300 ease-in-out dark:bg-black dark:text-white bg-neutral-600 text-white rounded text-center ${selectedTecnologies.includes(tecnologie) ? "!bg-violet-500" : ""}`}
+                  className={`px-4 py-2 transition duration-300 ease-in-out dark:bg-black dark:text-white bg-neutral-600 text-white rounded text-center ${selectedTecnologies.includes(tecnologie) ? "!bg-cyan-500" : ""}`}
                 >
                   {formatText(tecnologie)}
                 </button>
@@ -200,7 +200,7 @@ export default function Home() {
                       setSelectedTags([...selectedTags, tag]);
                     }
                   }}
-                  className={`px-4 py-2 transition duration-300 ease-in-out dark:bg-black dark:text-white bg-neutral-600 text-white rounded text-center ${selectedTags.includes(tag) ? "!bg-violet-500" : ""}`}
+                  className={`px-4 py-2 transition duration-300 ease-in-out dark:bg-black dark:text-white bg-neutral-600 text-white rounded text-center ${selectedTags.includes(tag) ? "!bg-cyan-500" : ""}`}
                 >
                   {formatText(tag)}
                 </button>

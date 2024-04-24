@@ -21,7 +21,7 @@ const MenuLink = ({ children, href}) => {
   const router = useRouter();
   return (
     <NavigationMenuLink
-      className={`flex items-center justify-center ${router.pathname === href ? "text-violet-600" : ""}`}
+      className={`flex items-center justify-center ${router.pathname === href ? "text-cyan-600" : ""}`}
       href={href}
     >
       {children}

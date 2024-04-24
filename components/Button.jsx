@@ -3,7 +3,7 @@ import Link from "next/link";
 export default function Button({ children, href, className }) {
   return (
     <Link
-      href={href}
+      href={href ? href : ''}
       target="_blank"
       className={`flex items-center justify-center border-[1px] border-black dark:border-white 
       rounded-lg font-bold before:ease relative h-12 w-3/4 xl:w-auto px-4 overflow-hidden  text-black

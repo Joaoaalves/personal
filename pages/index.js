@@ -12,7 +12,7 @@ export default function Home() {
           <h1 className="font-bold text-xl lg:text-3xl xl:text-4xl">
             João Alves
           </h1>
-          <h2 className="font-bold text-xl mb-2 text-violet-600">
+          <h2 className="font-bold text-xl mb-2 text-cyan-500 dark:text-cyan-500">
             FullStack Web Developer
           </h2>
           <hr className="mb-0 dark:border-neutral-800" />
