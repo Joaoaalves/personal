@@ -42,6 +42,15 @@ const projects = [
     tags: ["Frontend", "Web", "Backend", "Database"],
   },
   {
+    title: "projects.devlinks.title",
+    description: "projects.devlinks.description",
+    link: "https://dev-links-next-js-shadcn.vercel.app/",
+    code: "https://github.com/Joaoaalves/Dev-Links-NextJS-Shadcn",
+    image: "/images/logo-devlinks-large.svg",
+    tecnologies: ["nextjs", "react", "tailwindcss", "mongodb"],
+    tags: ["Frontend", "Web", "Backend", "Database"]
+  },
+  {
     title: "projects.spotify-clone.title",
     description: "projects.spotify-clone.description",
     link: "",

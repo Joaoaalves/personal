@@ -147,7 +147,7 @@ function Item({ children }) {
 function Image({ image }) {
   return (
     <div
-      className="w-3/4 xl:w-full h-64 bg-contain bg-no-repeat bg-bottom lg:bg-center rounded bg-clip-content drop-shadow-[0px_0px_6px_rgba(0,0,0,0.4)] dark:drop-shadow-[0px_0px_4px_rgba(255,255,255,0.15)]"
+      className="w-3/4 xl:w-full h-64 bg-contain bg-no-repeat bg-bottom lg:bg-center rounded bg-clip-content drop-shadow-[0px_0px_6px_rgba(0,0,0,0.4)] dark:drop-shadow-[0px_0px_1px_rgba(255,255,255,8)]"
       style={{
         backgroundImage: `url(${image})`,
       }}

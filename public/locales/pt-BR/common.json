@@ -50,6 +50,8 @@
   "skills.others.title": "Outros",
   "skills.others.text": "Além das habilidades técnicas, domino metodologias ágeis como <strong>Scrum</strong> e <strong>Kanban</strong>, facilitando a gestão eficiente de projetos. Utilizo ferramentas como <strong>Trello</strong> e <strong>Figma</strong> para otimizar processos de colaboração e design.",
   "skills.proficiency": "Tecnologias com maior proficiência",
+  "projects.devlinks.title": "DevLinks",
+  "projects.devlinks.description": "Aplicativo para compartilhamento de links pessoais de redes sociais. Desenvolvido com Next.js e Shadcn. Interface moderna e fácil de usar para centralizar todos os seus perfis sociais em um só lugar.",  
   "projects.hit-the-dot.title": "Hit The Dot",
   "projects.hit-the-dot.description": "Site para 'ponto eletrônico' com feature de autenticação e controle de ponto. Desenvolvido com Python, Flask, MySQL, Redis, HTML5 e CSS3.",
   "projects.maryna-carvalho.title": "Maryna Carvalho Advocacia",
