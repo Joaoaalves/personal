@@ -13,14 +13,22 @@ const formatText = (text) => {
 
 const projects = [
   {
-    title: "projects.hit-the-dot.title",
-    description: "projects.hit-the-dot.description",
-    link: "https://github.com/Joaoaalves/hit-the-dot",
-    code: "https://github.com/Joaoaalves/hit-the-dot",
-    image:
-      "https://raw.githubusercontent.com/Joaoaalves/hit-the-dot/main/app/static/images/logo-high-qualit y.svg?token=GHSAT0AAAAAACO56MCIOAUNUURRANP3RI5GZP2EPQQ",
-    tecnologies: ["python", "flask", "mysql", "html", "css", "redis"],
-    tags: ["Backend", "Web", "Database", "Frontend"],
+    title: "projects.kanban.title",
+    description: "projects.kanban.description",
+    link: "https://kanban.joaoalves.me",
+    code: "https://github.com/Joaoaalves/kanban",
+    image: "/images/logo-kanban.svg",
+    tecnologies: ["nextjs", "react", "tailwindcss", "mongodb"],
+    tags: ["Frontend", "Web", "Backend", "Database"]
+  },
+  {
+    title: "projects.devlinks.title",
+    description: "projects.devlinks.description",
+    link: "https://dev-links-next-js-shadcn.vercel.app/",
+    code: "https://github.com/Joaoaalves/Dev-Links-NextJS-Shadcn",
+    image: "/images/logo-devlinks-large.svg",
+    tecnologies: ["nextjs", "react", "tailwindcss", "mongodb"],
+    tags: ["Frontend", "Web", "Backend", "Database"]
   },
   {
     title: "projects.maryna-carvalho.title",
@@ -42,13 +50,14 @@ const projects = [
     tags: ["Frontend", "Web", "Backend", "Database"],
   },
   {
-    title: "projects.devlinks.title",
-    description: "projects.devlinks.description",
-    link: "https://dev-links-next-js-shadcn.vercel.app/",
-    code: "https://github.com/Joaoaalves/Dev-Links-NextJS-Shadcn",
-    image: "/images/logo-devlinks-large.svg",
-    tecnologies: ["nextjs", "react", "tailwindcss", "mongodb"],
-    tags: ["Frontend", "Web", "Backend", "Database"]
+    title: "projects.hit-the-dot.title",
+    description: "projects.hit-the-dot.description",
+    link: "https://github.com/Joaoaalves/hit-the-dot",
+    code: "https://github.com/Joaoaalves/hit-the-dot",
+    image:
+      "https://raw.githubusercontent.com/Joaoaalves/hit-the-dot/main/app/static/images/logo-high-qualit y.svg?token=GHSAT0AAAAAACO56MCIOAUNUURRANP3RI5GZP2EPQQ",
+    tecnologies: ["python", "flask", "mysql", "html", "css", "redis"],
+    tags: ["Backend", "Web", "Database", "Frontend"],
   },
   {
     title: "projects.spotify-clone.title",
