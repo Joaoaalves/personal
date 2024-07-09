@@ -13,6 +13,15 @@ const formatText = (text) => {
 
 const projects = [
   {
+    title: "projects.ip-tracker.title",
+    description: "projects.ip-tracker.description",
+    link: "https://ip.joaoalves.me",
+    code: "https://github.com/Joaoaalves/ip-address-tracker",
+    image: "/images/angular.png",
+    tecnologies: ["angular", "rxjs"],
+    tags: ["Frontend", "Web"]
+  },
+  {
     title: "projects.kanban.title",
     description: "projects.kanban.description",
     link: "https://kanban.joaoalves.me",

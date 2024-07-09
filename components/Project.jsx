@@ -1,9 +1,9 @@
+import {default as NextImage} from "next/image";
 import {
   FaReact,
   FaCss3,
   FaHtml5,
   FaAws,
-  FaChevronRight,
 } from "react-icons/fa";
 import { VscGithub } from "react-icons/vsc";
 import { IoLogoJavascript } from "react-icons/io5";
@@ -19,7 +19,9 @@ import {
   SiRadixui,
   SiFlask,
   SiRedis,
+  SiAngular
 } from "react-icons/si";
+import RXJS from "@/public/icons/rxjs.svg"
 import { RxStitchesLogo } from "react-icons/rx";
 
 import {
@@ -126,6 +128,16 @@ const tecnologies = {
       <SiRedis className="text-2xl text-red-400" />
     </Icon>
   ),
+  angular:(
+    <Icon text="Angular">
+      <SiAngular className="text-2xl text-red-400" />
+    </Icon>
+  ),
+  rxjs: (
+    <Icon text="RXJS">
+      <NextImage src={RXJS} width={24} height={24}/>
+    </Icon>
+  )
 };
 
 function Root({ children }) {

@@ -50,6 +50,8 @@
   "skills.others.title": "Others",
   "skills.others.text": "In addition to technical skills, I've mastered agile methodologies like <strong>Scrum</strong> and <strong>Kanban</strong>, facilitating efficient project management. I utilize tools like <strong>Trello</strong> and <strong>Figma</strong> to optimize collaboration and design processes.",
   "skills.proficiency": "Technologies with higher proficiency",
+  "projects.ip-tracker.title": "IP Tracker",
+  "projects.ip-tracker.description": "An IP tracking application that allows users to search for geolocation information of IP addresses. Developed with Angular, the application utilizes a mapping library to display the location and makes requests to geolocation APIs to obtain accurate data.",
   "projects.kanban.title": "Kanban",
   "projects.kanban.description": "A comprehensive Kanban application allowing users to create numerous boards, each with multiple columns, tasks, and subtasks. The app supports user authentication and includes a drag-and-drop feature for ease of use.",
   "projects.devlinks.title": "DevLinks",
