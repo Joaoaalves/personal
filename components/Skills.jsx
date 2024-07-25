@@ -1,16 +1,17 @@
 import Skill from "./Skill";
 import { useTranslation } from "next-i18next";
 import { Trans } from "next-i18next";
+
 const skills = [
-  { tec: "Python", percentage: 90, color: "#31a742" },
-  { tec: "React", percentage: 80, color: "#00a8ff" },
-  { tec: "Flask", percentage: 75, color: "#00a8ff" },
-  { tec: "MySQL", percentage: 70, color: "#00a8ff" },
-  { tec: "Node.js", percentage: 70, color: "#00a8ff" },
-  { tec: "MongoDB", percentage: 70, color: "#00a8ff" },
-  { tec: "Express", percentage: 65, color: "#00a8ff" },
-  { tec: "PHP", percentage: 60, color: "#ffde57" },
-  { tec: "PostgreSQL", percentage: 60, color: "#ffde57" },
+  { tec: "Python", percentage: 90, experience: "3 Years"  },
+  { tec: "React", percentage: 80, experience: "2.5 Years"  },
+  { tec: "Flask", percentage: 75, experience: "2 years"  },
+  { tec: "MySQL", percentage: 70, experience: "2 Years"  },
+  { tec: "MongoDB", percentage: 60, experience: "1.5 years"  },
+  { tec: "Node.js", percentage: 50, experience: "1 Year"  },
+  { tec: "PHP", percentage: 50, experience: "1 Year"  },
+  { tec: "PostgreSQL", percentage: 40, experience: "8 Months"  },
+  { tec: "Angular", percentage: 30, experience: "4 Months"}
 ];
 
 export default function Skills() {
@@ -55,7 +56,7 @@ export default function Skills() {
             key={index}
             tec={skill.tec}
             percentage={skill.percentage}
-            color={skill.color}
+            experience={skill.experience}
           />
         ))}
       </div>
