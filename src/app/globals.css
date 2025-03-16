@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    font-family: var(--font-primary), sans-serif;
+}
+
+@layer base {
+    :root {
+        --radius: 0.5rem;
+    }
+
+    .no-scrollbar::-webkit-scrollbar {
+        display: none;
+    }
+   /* Hide scrollbar for IE, Edge and Firefox */
+    .no-scrollbar {
+        -ms-overflow-style: none;  /* IE and Edge */
+        scrollbar-width: none;  /* Firefox */
+  }
+
+  .mask-hexagon {
+    clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+  }
+
+  *::-webkit-scrollbar {
+    height: 7px;
+    width: 7px;
+  }
+  *::-webkit-scrollbar-track {
+    border-radius: 20px;
+    background-color: transparent;
+  }
+  
+  *::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background-image: linear-gradient(to bottom, var(--secondary), var(--tertiary));
+}
+}

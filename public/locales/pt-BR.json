@@ -1,0 +1,192 @@
+{
+    "nav": {
+        "links": {
+            "home": "Home",
+            "timeline": "Timeline",
+            "skills": "Skills",
+            "contact": "Contato",
+            "projects": "Projetos"
+        },
+        "languageBtnAlt": "Botão para selecionar linguagem"
+    },
+    "hero": {
+        "title": "Desenvolvedor Fullstack",
+        "subtitle": "Olá! Eu sou João Alves, um Desenvolvedor Fullstack com 4 anos de experiência, especializado em TypeScript (Next.js) e Python no desenvolvimento fullstack. Eu construo soluções completas do backend ao frontend, sem me limitar a nenhuma linguagem ou stack específica, com foco em desempenho, segurança e design eficiente.",
+        "button": "Entre em Contato"
+    },
+    "timeline": {
+        "title": "Essa é a minha história",
+        "subtitle": "Tenho trabalhado como Desenvolvedor Fullstack por 4 anos, construindo soluções completas do backend ao frontend, com foco em desempenho, segurança e design eficiente.",
+        "viewCode": "Ver Código",
+        "item-1": {
+            "title": "2018 - 2020",
+            "paragraph": "Fiquei matriculado no curso de Engenharia de Software na Universidade de Brasília. Durante esse período, desenvolvi principalmente aplicações para uso acadêmico. Um projeto notável foi a integração do aplicativo “Guardiões da Saúde” — que rastreava possíveis exposições à COVID-19 em tempo real — com um chatbot no Telegram, permitindo que os usuários reportassem seus sintomas sem precisar instalar um aplicativo externo.",
+            "doctorS": {
+                "title": "DoctorS",
+                "description": "Um chatbot desenvolvido em Flask que se integrou com o aplicativo Guardiões da Saúde para rastrear sintomas de Covid-19 em tempo real, utilizando Firebase como banco de dados e a API do Telegram para comunicação."
+            }
+        },
+        "item-2": {
+            "title": "Certificações de 2020",
+            "paragraph": "Em 2020, obtive várias certificações importantes:",
+            "certifications": {
+                "network-specialist": "✅ Especialista em Segurança de Redes Certificado (CNSS) – International Cybersecurity Institute (ICSI)",
+                "cybersecurity-essentials": "✅ Fundamentos de Cybersegurança – Cisco Networking Academy",
+                "bootcamp": "✅ Bootcamp em Análise de Cybersegurança – XP Educação (IGTI)"
+            }
+        },
+        "item-3": {
+            "title": "10/2020 - 2021: Estágio na DBS Web",
+            "paragraph": "Iniciei um estágio na DBS Web como desenvolvedor web fullstack. Durante esse período, desenvolvi e implantei uma aplicação de controle de ponto para funcionários e fui responsável pela segurança e backend de vários projetos de clientes.",
+            "htd": {
+                "title": "Hit The Dot",
+                "description": "Um sistema eletrônico de controle de ponto desenvolvido com Flask, utilizando Firebase para autenticação, MySQL para armazenamento de dados e Redis para otimização de desempenho e rastreamento de turnos em tempo real."
+            }
+        },
+        "item-4": {
+            "title": "Julho 2023: Transferência de Curso & Freelancing",
+            "paragraph": "Em julho de 2023, transferi-me do curso de Engenharia de Software na Universidade de Brasília para o curso de Ciência da Computação na Universidade Católica de Brasília. Por volta da mesma época, comecei a trabalhar como desenvolvedor fullstack freelancer."
+        },
+        "item-5": {
+            "title": "2023 → 2024: CMS para Instituto Panapaná",
+            "paragraph": "Desenvolvi um sistema de gerenciamento de cursos (CMS) para o Instituto Panapaná, uma plataforma dedicada a oferecer educação gratuita para jovens em situação de vulnerabilidade, priorizando oportunidades de aprendizagem acessíveis em vez de aprimoramentos administrativos tradicionais.",
+            "instituto": {
+                "title": "Instituto Panapaná",
+                "description": "Um CMS projetado para o Instituto Panapaná, focado em oferecer recursos educacionais gratuitos a jovens em circunstâncias vulneráveis, enfatizando a aprendizagem acessível em vez da administração acadêmica convencional."
+            }
+        },
+        "item-6": {
+            "title": "2024 - Presente: AILib",
+            "paragraph": "Atualmente, estou desenvolvendo o AILib, um sistema construído com Electron.js e React que utiliza APIs de IA para aprimorar a leitura e anotação de livros. Recursos principais incluem resumos ultra detalhados dos livros, Geração Aprimorada por Recuperação (RAG) avançada com QDrant como banco de dados vetorial e processamento paralelo de documentos—capaz de incorporar até 500 páginas por minuto em um banco de dados SQLite, que gerencia a Recuperação de Documento Pai com QDrant.",
+            "ailib": {
+                "title": "AILib",
+                "description": "Um sistema construído com Electron.js e React que utiliza APIs de IA para aprimorar a leitura e anotação de livros. Recursos principais incluem resumos ultra detalhados dos livros, Geração Aprimorada por Recuperação (RAG) avançada com QDrant como banco de dados vetorial e processamento paralelo de documentos—capaz de incorporar até 500 páginas por minuto em um banco de dados SQLite, que gerencia a Recuperação de Documento Pai com QDrant."
+            }
+        },
+        "item-7": {
+            "title": "2025 - Presente: Kairós",
+            "paragraph": "Estou desenvolvendo um sistema de geração de conteúdo digital para clientes. Esta aplicação gera textos utilizando grandes modelos de linguagem (LLMs), realiza curadoria automática de notícias relevantes para cada cliente e produz conteúdo em áudio e vídeo gerado por IA. O sistema é construído com Next.js no frontend, FastAPI no backend, utiliza REDIS para polling em tempo real via callbacks, usa MySQL para armazenamento de dados e emprega QDrant como banco de dados vetorial.",
+            "kairos": {
+                "title": "Kairós",
+                "description": "Uma aplicação web para criação de conteúdo automatizado utilizando grandes modelos de linguagem (LLMs). O app realiza curadoria de notícias, gera textos e produz conteúdo em áudio e vídeo gerado por IA. Desenvolvido com Next.js, FastAPI, MySQL e Redis, o sistema utiliza QDrant como banco de dados vetorial para indexação eficiente de dados."
+            }
+        }
+    },
+    "skills": {
+        "title": "Habilidades",
+        "subtitle": "Tenho um conjunto diversificado de habilidades que abrangem backend, frontend, bancos de dados e outras tecnologias complementares. Explore minhas competências em várias tecnologias e ferramentas que impulsionam meus projetos.",
+        "see": "Veja meus",
+        "projects": "Projetos",
+        "years": "Anos",
+        "backend": {
+            "title": "Backend",
+            "paragraph": "Esta seção destaca minha experiência em desenvolvimento backend, com foco na construção de sistemas robustos, escaláveis e seguros. Ela evidencia minha proficiência em linguagens de programação, frameworks e tecnologias que alimentam a lógica do servidor e o gerenciamento de dados.",
+            "python": "Com 3 anos de experiência prática em Python, aperfeiçoei minhas habilidades na construção de sistemas backend robustos. Minha jornada — desde a descoberta da segurança da informação em uma idade precoce até o domínio do desenvolvimento web na faculdade — me capacitou a desenvolver APIs RESTful escaláveis, automatizar processos e integrar práticas de segurança rigorosas em cada projeto. Por exemplo, desenvolvi `Hit The Dot`, uma aplicação de controle de ponto utilizando Flask e MySQL, e mergulhei no desenvolvimento assistido por IA criando um app para geração automática de conteúdo utilizando FastAPI, MySQL, NextJS e Redis.",
+            "typescript": "A incorporação do TypeScript elevou significativamente meu desenvolvimento backend. Sua tipagem forte e sintaxe moderna garantem que meu código permaneça robusto e de fácil manutenção, reduzindo erros e permitindo uma escalabilidade mais suave à medida que os projetos crescem em complexidade.",
+            "php": "Minha expertise em PHP, aprimorada através de estágios e projetos freelancer, me permite integrar lógica de servidor dinâmica e dar suporte a sistemas legados. Foco na construção de soluções eficientes e seguras que interajam de forma integrada com vários bancos de dados."
+        },
+        "frontend": {
+            "title": "Frontend",
+            "paragraph": "Esta seção demonstra minha expertise em criar interfaces de usuário envolventes e responsivas. Combino frameworks modernos e princípios de design para oferecer experiências front-end interativas, fluidas e visualmente atraentes.",
+            "nextjs": "Nos últimos 2,5 anos, tenho utilizado Next.js e React para construir sites rápidos, interativos e otimizados para SEO. Por exemplo, desenvolvi `DevLinks` — um app para centralizar perfis de redes sociais — além de sites responsivos para um escritório de advocacia e uma clínica psicológica, incorporando recursos customizados de contato e agendamento. Meu trabalho demonstra uma integração perfeita de interfaces atraentes com sistemas backend robustos.",
+            "electronjs": "No projeto `AILib`, me aventurei no desenvolvimento de aplicações desktop usando ElectronJS e React. Este projeto demonstra minha capacidade de construir apps multiplataforma com armazenamento local em SQLite e recursos avançados de IA, integrando bancos de dados vetoriais como QDrant e Pinecone para processamento sofisticado de documentos e sumarização.",
+            "angular": "O Angular tem sido uma escolha complementar em meu conjunto de ferramentas de desenvolvimento web, permitindo-me experimentar interfaces dinâmicas. Apliquei Angular em projetos como a aplicação `IP Tracker`, que integra APIs de geolocalização e bibliotecas de mapeamento para fornecer visualizações interativas de dados de IP.",
+            "tailwindcss": "TailwindCSS acelera meu desenvolvimento frontend com sua abordagem utilitária, garantindo interfaces modernas e responsivas. Sua flexibilidade foi crucial em projetos como `DevLinks` e sites corporativos, onde a prototipagem rápida e o design consistente foram essenciais."
+        },
+        "databases": {
+            "title": "Bancos de Dados",
+            "paragraph": "Minha experiência com bancos de dados abrange desde sistemas relacionais tradicionais até soluções modernas NoSQL e baseadas em vetores. Projeto e otimizei esquemas de banco de dados, garantindo integridade, desempenho e escalabilidade dos dados em diversos projetos.",
+            "mysql": "Com 2 anos de experiência prática, gerencio bancos de dados relacionais como MySQL e MariaDB com foco em desempenho e confiabilidade. Projeto consultas otimizadas e esquemas robustos para assegurar a integridade dos dados em aplicações de alto tráfego, como demonstrado em projetos como `Hit The Dot`.",
+            "qdrant": "Ampliei minha expertise em bancos de dados para incluir bancos de dados vetoriais, como QDrant e Pinecone. Essas tecnologias aprimoram aplicações impulsionadas por IA, permitindo buscas de similaridade eficientes e indexação de dados de alta dimensão, desempenhando papel crucial em projetos como `AILib`.",
+            "mongodb": "Trabalhar com MongoDB por 1,5 anos me capacitou a lidar de forma eficiente com dados não estruturados. Construo modelos de dados dinâmicos que se adaptam às necessidades evolutivas dos projetos, garantindo processamento de dados escalável e em tempo real em aplicações web modernas.",
+            "redis": "Utilizei o Redis extensivamente para rastreamento em tempo real, cache e polling eficiente de dados, garantindo que aplicações como Hit The Dot e Kairos mantenham alta performance sob cargas intensas.",
+            "firebase": "O Firebase é integral ao meu processo de desenvolvimento para criação de aplicações serverless e em tempo real. Utilizo seus recursos de autenticação, funções em nuvem e sincronização para oferecer experiências de usuário contínuas com capacidades de implantação rápida."
+        },
+        "others": {
+            "title": "Outros",
+            "paragraph": "Além do desenvolvimento central, destaco-me na integração de tecnologias e ferramentas complementares que aprimoram a segurança, implantação e colaboração entre projetos.",
+            "cybersecurity": "Minha paixão precoce por segurança da informação, despertada aos 13 anos, evoluiu para uma profunda expertise em cibersegurança. Certificado por instituições líderes, integro medidas de segurança rigorosas em cada projeto, garantindo a proteção dos dados e a integridade dos sistemas.",
+            "docker": "Minha proficiência com Docker me permite containerizar aplicações para implantações consistentes e confiáveis. Junto com robustas pipelines de CI/CD, integro e entrego atualizações de forma contínua, assegurando que cada projeto atinja altos padrões de desempenho.",
+            "git": "Confio no Git para controle de versão preciso e colaboração eficiente. Minha vasta experiência em gerenciar bases de código complexas através de fluxos de trabalho disciplinados garante atualizações de projetos sem interrupções e integridade consistente do código.",
+            "linux": "Utilizo Linux para implantações e gerenciamento de servidores, especialmente em projetos como Hit The Dot e Kairos, e confio no Ubuntu como meu sistema operacional principal por sua estabilidade e desempenho.",
+            "figma": "Empreguei o Figma para desenhar interfaces de usuário e protótipos, notadamente em projetos como DevLinks e Corpo e Mente, onde a implementação precisa do design foi fundamental para uma experiência de usuário sem atritos."
+        }
+    },
+    "projects": {
+        "title": "Procure em meus Projetos",
+        "description": "Explore meu portfólio diversificado de projetos. Use a barra de pesquisa para encontrar rapidamente um projeto por nome ou tecnologia, e descubra o trabalho que realizei em diferentes áreas.",
+        "codeButton": "Ver Código",
+        "projectButton": "Visitar Site",
+        "AILib": {
+            "title": "AILib",
+            "shortDescription": "Um sistema construído com Electron.js e React que utiliza APIs de IA para aprimorar a leitura e anotação de livros. Recursos principais incluem resumos ultra detalhados dos livros, Geração Aprimorada por Recuperação (RAG) avançada com QDrant como banco de dados vetorial e processamento paralelo de documentos—capaz de incorporar até 500 páginas por minuto em um banco de dados SQLite, que gerencia a Recuperação de Documento Pai com QDrant.",
+            "description": "No desenvolvimento do AILib, enfrentei desafios que incluíram a integração de recursos avançados de IA, otimização da velocidade de processamento de documentos e garantia de sincronização perfeita entre os componentes. Lições chave envolveram o uso do QDrant para buscas por similaridade vetorial, aproveitamento do SQLite para armazenamento local eficiente de dados e domínio de técnicas de processamento paralelo para alcançar rápida incorporação e geração de resumos."
+        },
+        "kairos": {
+            "title": "Kairos",
+            "shortDescription": "Uma aplicação web para criação de conteúdo automatizado utilizando grandes modelos de linguagem (LLMs). O app realiza curadoria de notícias, gera textos e produz conteúdo em áudio e vídeo gerado por IA. Desenvolvido com Next.js, FastAPI, MySQL e Redis, o sistema utiliza QDrant como banco de dados vetorial para indexação eficiente de dados.",
+            "description": "O Kairos expandiu os limites da criação de conteúdo em tempo real. Enfrent ei desafios relacionados à integração de múltiplas tecnologias como QDrant, Redis, MySQL, FastAPI e Next.js. Este projeto aprofundou meu entendimento sobre polling em tempo real, gerenciamento de estado e as complexidades de gerar conteúdo dinâmico em texto, áudio e vídeo utilizando grandes modelos de linguagem, enquanto gerenciava processos assíncronos via RabbitMQ e filas de trabalho."
+        },
+        "ipTracker": {
+            "title": "IP Tracker",
+            "shortDescription": "Uma aplicação de rastreamento de IP que permite aos usuários buscar informações de geolocalização de endereços IP. Desenvolvida com Angular, a aplicação utiliza uma biblioteca de mapeamento para exibir a localização e realiza requisições a APIs de geolocalização para obter dados precisos.",
+            "description": "O IP Tracker é um projeto que combina APIs de mapeamento open-source com serviços de geolocalização para fornecer um rastreamento preciso de endereços IP. A aplicação utiliza Angular para criar uma interface dinâmica que visualiza os dados de geolocalização, garantindo uma experiência de usuário intuitiva e eficiente."
+        },
+        "kanban": {
+            "title": "Kanban",
+            "shortDescription": "Um sistema de gerenciamento de tarefas no estilo Kanban construído com Next.js e MongoDB, utilizando React Query para sincronização eficiente do estado entre cliente e servidor.",
+            "description": "O Kanban foi um projeto inspirado em um design do FrontEnd Mentor, e seu maior desafio foi implementar um sistema dinâmico para gerenciar múltiplos quadros, colunas e cartões, garantindo mudanças de status suaves e sincronizadas. A principal dificuldade foi manter a consistência entre o estado no lado do cliente e os dados do servidor, já que interações de Drag and Drop podem causar inconsistências se não forem bem gerenciadas. Para resolver isso, utilizei React Query, permitindo atualizações diretamente no estado HTTP em vez de gerenciar manualmente o estado no lado do cliente. O banco de dados escolhido foi o MongoDB, aproveitando sua flexibilidade para armazenar estruturas de quadros de forma dinâmica. Este projeto me ensinou muito sobre gerenciamento reativo de estado e otimização da sincronização de dados em aplicações interativas."
+        },
+        "devlinks": {
+            "title": "DevLinks",
+            "shortDescription": "Uma aplicação construída com Next.js, Tailwind CSS e MongoDB para armazenar e compartilhar links de redes sociais de desenvolvedores, com autenticação e opções de visibilidade de perfil.",
+            "description": "O DevLinks foi um projeto baseado em um design do FrontEnd Mentor, criado para fornecer uma maneira simples para desenvolvedores armazenarem e compartilharem seus links de redes sociais. A aplicação inclui um banco de dados básico, autenticação de usuários e visibilidade de perfil personalizável. O maior desafio foi implementar a validação de links, garantindo que apenas URLs válidas fossem armazenadas, além de exibir pré-visualizações dos perfis de redes sociais cadastrados. Escolhi Next.js pela facilidade em construir aplicações com SSR e SSG, Tailwind CSS para estilização rápida e MongoDB por sua flexibilidade em lidar com a estrutura simples de dados exigida pelo projeto."
+        },
+        "marynaCarvalho": {
+            "title": "Maryna Carvalho Advocacia",
+            "shortDescription": "Landing page para um escritório de advocacia, desenvolvida com Next.js e TailwindCSS. O site inclui um formulário de contato integrado com ReSend para envio de emails.",
+            "description": "Maryna Carvalho Advocacia foi meu primeiro projeto freelancer, onde desenvolvi uma landing page profissional para um escritório de advocacia. O design foi fornecido previamente, permitindo-me focar exclusivamente na implementação do front-end e integração de funcionalidades. O site foi construído com Next.js para garantir carregamento rápido e eficiente, enquanto o TailwindCSS foi usado para estilização, mantendo a fidelidade ao design original. A principal funcionalidade implementada foi o formulário de contato, que utiliza a API do ReSend para enviar emails de forma confiável. Este projeto foi uma experiência valiosa para aprimorar minhas habilidades com Next.js e me familiarizar com as demandas do desenvolvimento para clientes reais."
+        },
+        "corpoEMente": {
+            "title": "Corpo e Mente Clinical Space",
+            "shortDescription": "Site para uma clínica de psicologia, com sistema de agendamento de consultas e autenticação com múltiplos níveis de permissão. Desenvolvido com Next.js, TailwindCSS (ShadCN) e MongoDB.",
+            "description": "O projeto Corpo e Mente Clinical Space foi um desafio abrangente, pois fui responsável não apenas pelo desenvolvimento do site, mas também pelo design de UI/UX e implementação de todas as funcionalidades do sistema. Construído com Next.js e estilizado com TailwindCSS e ShadCN, o site oferece uma experiência moderna e intuitiva. Uma das funcionalidades principais foi o sistema de agendamento de consultas, desenvolvido inteiramente do zero, permitindo que os pacientes marquem consultas de forma simples e segura. A autenticação foi implementada com diferentes níveis de permissão, garantindo acesso restrito a áreas específicas do sistema. O MongoDB foi utilizado como banco de dados, oferecendo flexibilidade na estruturação dos dados e escalabilidade para melhorias futuras. Este projeto proporcionou um aprendizado profundo em autenticação, gerenciamento de estado e design focado na experiência do usuário."
+        },
+        "hitTheDot": {
+            "title": "Hit the Dot",
+            "shortDescription": "Um sistema eletrônico de controle de ponto desenvolvido com Flask, utilizando Firebase para autenticação, MySQL para armazenamento de dados e Redis para otimização de desempenho e rastreamento de turnos em tempo real.",
+            "description": "Hit the Dot foi um projeto solo desenvolvido para a empresa onde estagiei, com o objetivo de gerenciar os horários de trabalho dos funcionários. Inicialmente, utilizei Flask como framework principal, junto com Jinja para renderização de templates HTML. A autenticação foi implementada com Firebase, mas conforme a aplicação cresceu e acumulou milhares de registros de timestamps, o Firebase começou a afetar o desempenho. Para resolver isso, migrei o banco de dados para MySQL, garantindo melhor eficiência no armazenamento e processamento dos dados. Além disso, implementei Redis para rastreamento rápido dos turnos e utilizei WebSockets para notificações em tempo real. Este foi meu primeiro projeto solo fullstack, onde enfrentei desafios como implantação em um servidor CentOS pela primeira vez, otimização de banco de dados, gerenciamento de processamento assíncrono, implementação de backups e utilização de bancos de dados chave-valor para melhorar a performance."
+        },
+        "doctorS": {
+            "title": "DoctorS",
+            "shortDescription": "Um chatbot desenvolvido em Flask que se integrou com o aplicativo Guardiões da Saúde para rastrear sintomas de Covid-19 em tempo real, utilizando Firebase como banco de dados e a API do Telegram para comunicação.",
+            "description": "DoctorS foi um chatbot criado com Flask que se integrou com o aplicativo Guardiões da Saúde, um projeto acadêmico para rastreamento em tempo real dos sintomas de Covid-19. O bot permitia que os usuários reportassem seus sintomas, e com base nos dados coletados, fornecia informações sobre a situação de contágio ao seu redor. Para armazenar os dados dos usuários e mantê-los sincronizados com a API do Guardiões da Saúde, utilizamos o Firebase como banco de dados NoSQL, pois precisávamos de uma solução rápida e escalável. Além disso, o bot utilizava a API do Telegram para interagir com os usuários, o que exigiu que aprendêssemos a gerenciar mensagens, comandos e fluxos de conversa. Um dos maiores desafios foi manter a correlação dos usuários entre as duas plataformas, garantindo a integridade dos dados e atualizações em tempo real."
+        }
+    },
+    "contact": {
+        "title": "Contato",
+        "button": "Entre em Contato",
+        "form": {
+            "title": "Entre em Contato",
+            "description": "Sinta-se à vontade para enviar uma mensagem com qualquer dúvida ou oportunidade. Estou ansioso para conectar com você.",
+            "name": "Seu Nome",
+            "email": "seu@email.com",
+            "message": "Olá, gostaria de conversar sobre...",
+            "button": "Enviar Mensagem",
+            "sendingMessage": "Enviando sua mensagem...",
+            "error": "Aconteceu um erro, tente novamente!",
+            "messageSent": "Mensagem enviada com sucesso!",
+            "fillAllFields": "Por favor, preencha todos os campos!"
+        },
+        "social": {
+            "title": "Social",
+            "description": "Você também pode me encontrar nas redes sociais.",
+            "links": {
+                "linkedin": "LinkedIn",
+                "github": "GitHub",
+                "twitter": "Twitter",
+                "instagram": "Instagram"
+            }
+        }
+    }
+}

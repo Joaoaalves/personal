@@ -1,14 +1,14 @@
 {
-"name" : "João Alves - Desenvolvedor Web",
-"short_name" : "João Alves",
-"description" : "Desenvolvedor Web Full Stack com experiência em React, Next.js, Node.js, Express, MongoDB, MySQL, entre outras tecnologias.",
-"start_url" : "/",
-"display" : "standalone",
-"icons" : [
-    {
-      "src": "/favicon.ico",
-      "sizes": "any",
-      "type": "image/x-icon"
-    }
-  ]
+    "name": "João Alves - FullStack Web Developer",
+    "short_name": "João Alves",
+    "description": "Full Stack Web Developer with experience in React, Next.js, Node.js, Express, MongoDB, MySQL, and other technologies.",
+    "start_url": "/",
+    "display": "standalone",
+    "icons": [
+        {
+            "src": "/favicon.ico",
+            "sizes": "any",
+            "type": "image/x-icon"
+        }
+    ]
 }
