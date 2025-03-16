@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages, setRequestLocale } from "next-intl/server";
+import { Analytics } from "@vercel/analytics/react";
 
 // Fonts
 import { Poppins } from "next/font/google";
@@ -61,6 +62,7 @@ export default async function RootLayout({
             >
                 <NextIntlClientProvider messages={messages}>
                     {children}
+                    <Analytics />
                 </NextIntlClientProvider>
             </body>
         </html>
