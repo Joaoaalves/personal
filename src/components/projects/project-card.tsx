@@ -5,7 +5,7 @@ interface ProjectCardProps {
     src: string;
     title: string;
     description: string;
-    underDevelopment: boolean;
+    underDevelopment?: boolean;
     buttonText: string;
     repo: string;
     imageClassName?: string;
