@@ -30,6 +30,7 @@ import {
     SiElectron,
     SiFigma,
     SiCentos,
+    SiDotnet,
 } from "react-icons/si";
 import { IoCodeSlashOutline } from "react-icons/io5";
 
@@ -44,6 +45,30 @@ export function getSkills(t: (key: string) => string) {
                 <Accordion type="single" collapsible>
                     <AccordionItem
                         value="item-1"
+                        className="border-neutral-600 py-4 text-neutral-200"
+                    >
+                        <AccordionTrigger>
+                            <div className="grid md:grid-cols-3 w-full">
+                                <span className="flex items-center gap-x-4 text-xl font-medium">
+                                    <SiDotnet className="me-2 text-2xl" />
+                                    ASP.NET Core - .NET & C#
+                                </span>
+
+                                <span className="hidden md:block">
+                                    1 {t("projects")}
+                                </span>
+
+                                <span className="hidden md:block font-bold text-lg text-secondary">
+                                    Currently Working
+                                </span>
+                            </div>
+                        </AccordionTrigger>
+                        <AccordionContent className="text-sm md:text-lg text-start">
+                            <p>{t("backend.dotnet")}</p>
+                        </AccordionContent>
+                    </AccordionItem>
+                    <AccordionItem
+                        value="item-2"
                         className="border-neutral-600 py-4 text-neutral-200"
                     >
                         <AccordionTrigger>
@@ -67,7 +92,7 @@ export function getSkills(t: (key: string) => string) {
                         </AccordionContent>
                     </AccordionItem>
                     <AccordionItem
-                        value="item-2"
+                        value="item-3"
                         className="border-neutral-600 py-4 text-neutral-200"
                     >
                         <AccordionTrigger>
@@ -91,7 +116,7 @@ export function getSkills(t: (key: string) => string) {
                         </AccordionContent>
                     </AccordionItem>
                     <AccordionItem
-                        value="item-3"
+                        value="item-4"
                         className="border-neutral-600 py-4 text-neutral-200"
                     >
                         <AccordionTrigger>
@@ -132,6 +157,30 @@ export function getSkills(t: (key: string) => string) {
                         <AccordionTrigger>
                             <div className="grid md:grid-cols-3 w-full">
                                 <span className="flex items-center gap-x-4 text-xl font-medium">
+                                    <TbBrandAngular className="me-2 text-2xl" />
+                                    Angular
+                                </span>
+
+                                <span className="hidden md:block">
+                                    2 {t("projects")}
+                                </span>
+
+                                <span className="hidden md:block font-bold text-lg text-secondary">
+                                    Currently Working
+                                </span>
+                            </div>
+                        </AccordionTrigger>
+                        <AccordionContent className="text-sm md:text-lg text-start">
+                            {t("frontend.angular")}
+                        </AccordionContent>
+                    </AccordionItem>
+                    <AccordionItem
+                        value="item-2"
+                        className="border-neutral-600 py-4 text-neutral-200"
+                    >
+                        <AccordionTrigger>
+                            <div className="grid md:grid-cols-3 w-full">
+                                <span className="flex items-center gap-x-4 text-xl font-medium">
                                     <TbBrandNextjs className="me-2 text-2xl" />
                                     NextJS & React
                                 </span>
@@ -150,7 +199,7 @@ export function getSkills(t: (key: string) => string) {
                         </AccordionContent>
                     </AccordionItem>
                     <AccordionItem
-                        value="item-4"
+                        value="item-3"
                         className="border-neutral-600 py-4 text-neutral-200"
                     >
                         <AccordionTrigger>
@@ -173,32 +222,9 @@ export function getSkills(t: (key: string) => string) {
                             {t("frontend.electronjs")}
                         </AccordionContent>
                     </AccordionItem>
-                    <AccordionItem
-                        value="item-2"
-                        className="border-neutral-600 py-4 text-neutral-200"
-                    >
-                        <AccordionTrigger>
-                            <div className="grid md:grid-cols-3 w-full">
-                                <span className="flex items-center gap-x-4 text-xl font-medium">
-                                    <TbBrandAngular className="me-2 text-2xl" />
-                                    Angular
-                                </span>
 
-                                <span className="hidden md:block">
-                                    1 {t("projects")}
-                                </span>
-
-                                <span className="hidden md:block">
-                                    1 {t("years")}
-                                </span>
-                            </div>
-                        </AccordionTrigger>
-                        <AccordionContent className="text-sm md:text-lg text-start">
-                            {t("frontend.angular")}
-                        </AccordionContent>
-                    </AccordionItem>
                     <AccordionItem
-                        value="item-3"
+                        value="item-4"
                         className="border-neutral-600 py-4 text-neutral-200"
                     >
                         <AccordionTrigger>

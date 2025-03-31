@@ -6,7 +6,8 @@
             "skills": "Skills",
             "contact": "Contact",
             "projects": "Projects"
-        }
+        },
+        "languageBtnAlt": "Language selector button."
     },
     "hero": {
         "title": "Fullstack Developer",
@@ -63,11 +64,19 @@
             }
         },
         "item-7": {
-            "title": "2025 - Present: Digital Content Generation System",
-            "paragraph": "I am developing a digital content generation system for clients. This application generates text using large language models (LLMs), automatically curates relevant news for each client, and produces AI-generated audio and video content. The system is built with Next.js on the frontend, FastAPI on the backend, employs REDIS for real-time polling via callbacks, uses MySQL for data storage, and leverages QDrant as a vector database.",
+            "title": "10/2024 - 03/2025: Kairos",
+            "paragraph": "I've worked on developing a digital content generation system for clients. This application generates text using large language models (LLMs), automatically curates relevant news for each client, and produces AI-generated audio and video content. The system is built with Next.js on the frontend, FastAPI on the backend, employs REDIS for real-time polling via callbacks, uses MySQL for data storage, and leverages QDrant as a vector database.",
             "kairos": {
                 "title": "Kairos",
                 "description": "A web application for creating automated content using large language models (LLMs). The app curates news, generates text, and produces AI-generated audio and video content. Developed with Next.js, FastAPI, MySQL, and Redis, the system leverages QDrant as a vector database for efficient data indexing."
+            }
+        },
+        "item-8": {
+            "title": "2025: Developing RAG.NET",
+            "paragraph": "Building RAG.NET has been an exciting challenge. From designing a flexible workflow structure to implementing advanced AI-driven processing techniques, every step has required balancing performance and modularity. The system empowers users to tailor their RAG pipelines with cutting-edge chunking, querying, and ranking methods. As development progresses, I’m expanding integrations with new embedding and conversation providers, pushing the boundaries of what’s possible in intelligent retrieval systems.",
+            "ragnet": {
+                "title": "RAG.NET",
+                "description": "A modular system built with ASP.NET Core, Angular 19, PostgreSQL, and QDrant, designed to create and execute powerful RAG workflows with customizable AI components."
             }
         }
     },
@@ -80,6 +89,7 @@
         "backend": {
             "title": "Backend",
             "paragraph": "This section showcases my backend development expertise, focusing on building robust, scalable, and secure systems. It highlights my proficiency in programming languages, frameworks, and technologies that power server-side logic and data management.",
+            "dotnet": "C# and .NET have become my primary choice for backend development due to their high performance, scalability, and strong adherence to Clean Architecture and SOLID principles. Leveraging ASP.NET Core, Entity Framework, and modular design patterns, I build maintainable and efficient APIs. Currently, I am developing RAG.NET, a modular system that enables users to construct and execute custom Retrieval-Augmented Generation (RAG) workflows. This project integrates QDrant for vector search, PostgreSQL for structured data storage, and multiple AI providers like OpenAI and Gemini, allowing dynamic configurations for embedding, chunking, ranking, and filtering AI-driven results.",
             "python": "With 3 years of hands-on experience in Python, I have honed my skills in building robust backend systems. My journey—from discovering information security at an early age to mastering web development in college—has empowered me to develop scalable RESTful APIs, automate processes, and integrate strong security practices into every project. For example, I developed `Hit The Dot`, a time tracking application leveraging Flask and MySQL, and I ventured into AI-assisted development by creating an app for automated content creation using FastAPI, MySQL, NextJS, and Redis.",
             "typescript": "Incorporating TypeScript has significantly elevated my backend development. Its strong typing and modern syntax ensure that my code remains robust and maintainable, reducing errors and enabling smoother scalability as projects grow in complexity.",
             "php": "My PHP expertise, refined through internships and freelance projects, enables me to integrate dynamic server-side logic and support legacy systems. I focus on building efficient, secure solutions that seamlessly interact with various databases."
@@ -89,7 +99,7 @@
             "paragraph": "This section demonstrates my expertise in crafting engaging and responsive user interfaces. I combine modern frameworks and design principles to deliver seamless, interactive, and visually appealing front-end experiences.",
             "nextjs": "Over the past 2.5 years, I’ve leveraged Next.js and React to build fast, interactive, and SEO-friendly websites. For instance, I developed `DevLinks`—an app for centralizing social media profiles—as well as responsive websites for a law firm and a psychological clinic, incorporating custom contact and scheduling features. My work demonstrates a seamless integration of attractive interfaces with robust backend systems.",
             "electronjs": "In my `AILib` project, I ventured into desktop application development using ElectronJS and React. This project showcases my ability to build cross-platform apps with local SQLite storage and advanced AI features, integrating vector databases like QDrant and Pinecone for sophisticated document processing and summarization.",
-            "angular": "Angular has been a side pick in my web development toolkit, allowing me to experiment with dynamic interfaces. I applied Angular in projects like the `IP Tracker` application, which integrates geolocation APIs and mapping libraries to provide interactive visualizations of IP data.",
+            "angular": "Angular has become my go-to framework for projects that require strong architectural patterns and maintainability. Its component-based architecture, dependency injection, and TypeScript integration make it ideal for complex frontend applications. I have used Angular to build dynamic, large-scale applications where modularity and scalability are key, ensuring that frontend logic aligns seamlessly with backend services. Currently, I am implementing RAG.NET, a system that allows users to configure and execute AI-driven workflows, leveraging Angular for a modular and dynamic frontend interface.",
             "tailwindcss": "TailwindCSS accelerates my frontend development with its utility-first approach, ensuring responsive, modern interfaces. Its flexibility has been key in projects such as `DevLinks` and corporate websites, where rapid prototyping and consistent design were essential."
         },
         "databases": {
@@ -116,6 +126,11 @@
         "description": "Explore my diverse portfolio of projects. Use the search bar to quickly find a project by name or technology, and discover the work I've done across different domains.",
         "codeButton": "View Code",
         "projectButton": "View Project",
+        "RAGNET": {
+            "title": "RAG.NET",
+            "shortDescription": "A modular system built with ASP.NET Core, Angular 19, PostgreSQL, and QDrant that enables the creation of custom Retrieval-Augmented Generation (RAG) workflows. Users can configure Chunkers, Query Enhancers, Filters, and Rankers, integrating technologies like Proposition Chunking, Auto Querying, Self Querying Retrieval, and CoHere Reranker.",
+            "description": "In developing RAG.NET, I encountered challenges in maintaining a cohesive database structure to support workflow execution. To address this, I implemented the Factory pattern for constructing components like Chunkers and Embedders. Another key challenge was handling result streaming from threaded execution, requiring efficient thread management and avoiding thread locks. The system currently supports OpenAI embeddings, with plans to extend to other providers like Claude and Gemini, along with additional adapters for SERP integration."
+        },
         "AILib": {
             "title": "AILib",
             "shortDescription": "A system built with Electron.js and React that leverages AI APIs to enhance the reading and annotation of books. Key features include ultra-detailed book summaries, advanced Retrieval-Augmented Generation (RAG) with QDrant as the vector database, and parallelized document processing—capable of embedding up to 500 pages per minute into a SQLite database, that handles the Parent Document Retrieval with QDrant.",

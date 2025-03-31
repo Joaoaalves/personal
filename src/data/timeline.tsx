@@ -160,5 +160,25 @@ export function getTimelineData(t: (key: string) => string) {
                 </div>
             ),
         },
+        {
+            title: t("item-8.title"),
+            content: (
+                <div>
+                    <p className="text-neutral-200 text-xs md:text-lg font-normal mb-8">
+                        {t("item-8.paragraph")}
+                    </p>
+                    <div className="grid grid-cols-1 gap-4">
+                        <ProjectCard
+                            src="/images/projects/RAGNET.jpg"
+                            title={t("item-8.ragnet.title")}
+                            description={t("item-8.ragnet.description")}
+                            repo={"https://github.com/Joaoaalves/hit-the-dot"}
+                            buttonText={t("viewCode")}
+                            imageClassName="object-cover bg-black px-8"
+                        />
+                    </div>
+                </div>
+            ),
+        },
     ];
 }

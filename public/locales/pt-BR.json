@@ -64,11 +64,19 @@
             }
         },
         "item-7": {
-            "title": "2025 - Presente: Kairós",
-            "paragraph": "Estou desenvolvendo um sistema de geração de conteúdo digital para clientes. Esta aplicação gera textos utilizando grandes modelos de linguagem (LLMs), realiza curadoria automática de notícias relevantes para cada cliente e produz conteúdo em áudio e vídeo gerado por IA. O sistema é construído com Next.js no frontend, FastAPI no backend, utiliza REDIS para polling em tempo real via callbacks, usa MySQL para armazenamento de dados e emprega QDrant como banco de dados vetorial.",
+            "title": "10/2024 - 03/2025: Kairós",
+            "paragraph": "Eu trabalhei na criação de um sistema de geração de conteúdo digital para clientes. Esta aplicação gera textos utilizando grandes modelos de linguagem (LLMs), realiza curadoria automática de notícias relevantes para cada cliente e produz conteúdo em áudio e vídeo gerado por IA. O sistema é construído com Next.js no frontend, FastAPI no backend, utiliza REDIS para polling em tempo real via callbacks, usa MySQL para armazenamento de dados e emprega QDrant como banco de dados vetorial.",
             "kairos": {
                 "title": "Kairós",
                 "description": "Uma aplicação web para criação de conteúdo automatizado utilizando grandes modelos de linguagem (LLMs). O app realiza curadoria de notícias, gera textos e produz conteúdo em áudio e vídeo gerado por IA. Desenvolvido com Next.js, FastAPI, MySQL e Redis, o sistema utiliza QDrant como banco de dados vetorial para indexação eficiente de dados."
+            }
+        },
+        "item-8": {
+            "title": "2025: Criando o RAG.NET",
+            "paragraph": "O desenvolvimento do RAG.NET tem sido uma jornada cheia de desafios e inovação. Construir um sistema que permite a personalização total de workflows RAG exige não apenas conhecimento técnico, mas também criatividade para lidar com otimização de processos e integração de IA. Atualmente, estou expandindo as capacidades do sistema para suportar novos provedores de embedding e conversação, explorando formas mais inteligentes de recuperação de informações.",
+            "ragnet": {
+                "title": "RAG.NET",
+                "description": "Um sistema modular desenvolvido com ASP.NET Core, Angular 19, PostgreSQL e QDrant, projetado para criar e executar workflows avançados de RAG com componentes de IA configuráveis."
             }
         }
     },
@@ -88,9 +96,10 @@
         "frontend": {
             "title": "Frontend",
             "paragraph": "Esta seção demonstra minha expertise em criar interfaces de usuário envolventes e responsivas. Combino frameworks modernos e princípios de design para oferecer experiências front-end interativas, fluidas e visualmente atraentes.",
+            "dotnet": "C# e .NET tornaram-se minha principal escolha para o desenvolvimento backend devido ao seu alto desempenho, escalabilidade e forte aplicação dos princípios de Arquitetura Limpa e SOLID. Utilizando ASP.NET Core, Entity Framework e padrões de design modulares, construo APIs eficientes e fáceis de manter. Atualmente, estou desenvolvendo o RAG.NET, um sistema modular que permite aos usuários construir e executar fluxos de trabalho personalizados para Geração Aprimorada por Recuperação (RAG). O projeto integra QDrant para buscas vetoriais, PostgreSQL para armazenamento estruturado e múltiplos provedores de IA, como OpenAI e Gemini, permitindo configurações dinâmicas para embedding, chunking, ranking e filtragem de resultados baseados em IA.",
             "nextjs": "Nos últimos 2,5 anos, tenho utilizado Next.js e React para construir sites rápidos, interativos e otimizados para SEO. Por exemplo, desenvolvi `DevLinks` — um app para centralizar perfis de redes sociais — além de sites responsivos para um escritório de advocacia e uma clínica psicológica, incorporando recursos customizados de contato e agendamento. Meu trabalho demonstra uma integração perfeita de interfaces atraentes com sistemas backend robustos.",
             "electronjs": "No projeto `AILib`, me aventurei no desenvolvimento de aplicações desktop usando ElectronJS e React. Este projeto demonstra minha capacidade de construir apps multiplataforma com armazenamento local em SQLite e recursos avançados de IA, integrando bancos de dados vetoriais como QDrant e Pinecone para processamento sofisticado de documentos e sumarização.",
-            "angular": "O Angular tem sido uma escolha complementar em meu conjunto de ferramentas de desenvolvimento web, permitindo-me experimentar interfaces dinâmicas. Apliquei Angular em projetos como a aplicação `IP Tracker`, que integra APIs de geolocalização e bibliotecas de mapeamento para fornecer visualizações interativas de dados de IP.",
+            "angular": "Angular tem sido minha escolha para projetos que exigem uma arquitetura bem definida e aplicação de padrões de design. Sua abordagem baseada em componentes, injeção de dependência e integração nativa com TypeScript fazem dele a opção ideal para aplicações frontend complexas e modulares. Tenho utilizado Angular para construir sistemas escaláveis onde a lógica frontend se alinha perfeitamente aos serviços backend.",
             "tailwindcss": "TailwindCSS acelera meu desenvolvimento frontend com sua abordagem utilitária, garantindo interfaces modernas e responsivas. Sua flexibilidade foi crucial em projetos como `DevLinks` e sites corporativos, onde a prototipagem rápida e o design consistente foram essenciais."
         },
         "databases": {
@@ -117,6 +126,11 @@
         "description": "Explore meu portfólio diversificado de projetos. Use a barra de pesquisa para encontrar rapidamente um projeto por nome ou tecnologia, e descubra o trabalho que realizei em diferentes áreas.",
         "codeButton": "Ver Código",
         "projectButton": "Visitar Site",
+        "RAGNET": {
+            "title": "RAG.NET",
+            "shortDescription": "Um sistema modular desenvolvido com ASP.NET Core, Angular 19, PostgreSQL e QDrant que permite a criação de workflows personalizados de Recuperação Aprimorada por Geração (RAG). Os usuários podem configurar Chunkers, Query Enhancers, Filters e Rankers, integrando tecnologias como Proposition Chunking, Auto Querying, Self Querying Retrieval e CoHere Reranker.",
+            "description": "No desenvolvimento do RAG.NET, enfrentei desafios para manter uma estrutura coesa no banco de dados que suportasse a execução dos workflows. Para isso, implementei o padrão de projeto Factory para construir componentes como Chunkers e Embedders. Outro desafio importante foi o streaming dos resultados gerados por threads, exigindo gerenciamento eficiente de threads e evitando bloqueios. O sistema atualmente suporta embeddings da OpenAI, com planos para expandir a outros provedores como Claude e Gemini, além de novos adaptadores para integração com SERP."
+        },
         "AILib": {
             "title": "AILib",
             "shortDescription": "Um sistema construído com Electron.js e React que utiliza APIs de IA para aprimorar a leitura e anotação de livros. Recursos principais incluem resumos ultra detalhados dos livros, Geração Aprimorada por Recuperação (RAG) avançada com QDrant como banco de dados vetorial e processamento paralelo de documentos—capaz de incorporar até 500 páginas por minuto em um banco de dados SQLite, que gerencia a Recuperação de Documento Pai com QDrant.",

@@ -87,14 +87,20 @@ export function ProjectsGrid() {
 
                             <div>
                                 <div className="flex justify-between items-start p-4">
-                                    <div className="">
-                                        <motion.h3
-                                            layoutId={`title-${active.title}-${id}`}
-                                            className="font-bold text-neutral-100 text-2xl mb-2"
-                                        >
-                                            {active.title}
-                                        </motion.h3>
-
+                                    <div className="w-full">
+                                        <div className="w-full flex items-center justify-between">
+                                            <motion.h3
+                                                layoutId={`title-${active.title}-${id}`}
+                                                className="font-bold text-neutral-200 text-center text-lg font-primary"
+                                            >
+                                                {active.title}
+                                            </motion.h3>
+                                            {active.underDevelopment && (
+                                                <span className="bg-secondary text-white px-3 py-1 rounded-xl">
+                                                    Under Development
+                                                </span>
+                                            )}
+                                        </div>
                                         <div className="flex items-center justify-start gap-x-1 lg:gap-x-2 mb-8">
                                             {active.tecnologies.map(
                                                 ({ Icon, content }, index) => (
@@ -167,12 +173,20 @@ export function ProjectsGrid() {
                                 {card.header}
                             </motion.div>
                             <div className="flex justify-center items-start flex-col">
-                                <motion.h3
-                                    layoutId={`title-${card.title}-${id}`}
-                                    className="font-bold text-neutral-200 text-center text-lg font-primary"
-                                >
-                                    {card.title}
-                                </motion.h3>
+                                <div className="w-full flex items-center justify-between">
+                                    <motion.h3
+                                        layoutId={`title-${card.title}-${id}`}
+                                        className="font-bold text-neutral-200 text-center text-lg font-primary"
+                                    >
+                                        {card.title}
+                                    </motion.h3>
+                                    {card.underDevelopment && (
+                                        <span className="bg-secondary text-white px-3 py-1 rounded-xl">
+                                            Under Development
+                                        </span>
+                                    )}
+                                </div>
+
                                 <div className="flex items-start justify-start gap-x-3 w-full mt-4 ">
                                     {card?.tecnologies?.length > 0 &&
                                         card.tecnologies.map((tec, index) => (

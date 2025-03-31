@@ -1,6 +1,6 @@
 import { IconType } from "react-icons/lib";
 
-import { FaReact, FaCss3, FaHtml5 } from "react-icons/fa";
+import { FaReact, FaCss3, FaHtml5, FaAngular } from "react-icons/fa";
 import { TbBrandNextjs } from "react-icons/tb";
 import { RiOpenaiFill } from "react-icons/ri";
 import { IoLogoElectron } from "react-icons/io5";
@@ -17,6 +17,8 @@ import {
     SiAngular,
     SiResend,
     SiRabbitmq,
+    SiDotnet,
+    SiPostgresql,
 } from "react-icons/si";
 import { DiRedis } from "react-icons/di";
 
@@ -56,6 +58,7 @@ export type Tecnology = {
 export interface IProject {
     title: string;
     description: string;
+    underDevelopment?: boolean;
     viewCode: string;
     viewProject: string;
     repo: string;
@@ -67,11 +70,50 @@ export interface IProject {
 export const getProjects = (t: (key: string) => string): IProject[] => {
     return [
         {
+            title: t("RAGNET.title"),
+            description: t("RAGNET.shortDescription"),
+            viewCode: t("codeButton"),
+            viewProject: t("projectButton"),
+            repo: "https://github.com/Joaoaalves/RAGNET",
+            underDevelopment: true,
+            content: () => <p>{t("RAGNET.description")}</p>,
+            header: (
+                <Logo
+                    src="/images/projects/RAGNET.jpg"
+                    title={t("RAGNET.title")}
+                    className="!invert"
+                />
+            ),
+            tecnologies: [
+                {
+                    Icon: SiDotnet,
+                    content: "ASP NET",
+                },
+                {
+                    Icon: FaAngular,
+                    content: "Angular",
+                },
+                {
+                    Icon: SiPostgresql,
+                    content: "PostgreSQL",
+                },
+                {
+                    Icon: RiOpenaiFill,
+                    content: "OpenAI",
+                },
+                {
+                    Icon: PiVectorThreeLight,
+                    content: "QDrant",
+                },
+            ],
+        },
+        {
             title: t("AILib.title"),
             description: t("AILib.shortDescription"),
             viewCode: t("codeButton"),
             viewProject: t("projectButton"),
             repo: "https://github.com/Joaoaalves/ailib",
+            underDevelopment: true,
             content: () => <p>{t("AILib.description")}</p>,
             header: (
                 <Logo

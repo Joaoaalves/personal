@@ -5,6 +5,7 @@ interface ProjectCardProps {
     src: string;
     title: string;
     description: string;
+    underDevelopment: boolean;
     buttonText: string;
     repo: string;
     imageClassName?: string;
@@ -13,6 +14,7 @@ interface ProjectCardProps {
 export default function ProjectCard({
     src,
     title,
+    underDevelopment = false,
     description,
     repo,
     buttonText,
@@ -27,9 +29,18 @@ export default function ProjectCard({
                 className={imageClassName}
             />
             <div className="flex flex-col items-start gap-y-4">
-                <h4 className="text-neutral-200 font-bold text-xl mt-4">
-                    {title}
-                </h4>
+                <div className="w-full flex items-center justify-between">
+                    <h4 className="text-neutral-200 font-bold text-xl mt-4">
+                        {title}
+                    </h4>
+
+                    {underDevelopment && (
+                        <span className="bg-secondary text-white px-3 py-1 rounded-xl">
+                            Under Development
+                        </span>
+                    )}
+                </div>
+
                 <p className="text-neutral-300 text-sm">{description}</p>
 
                 <Link
