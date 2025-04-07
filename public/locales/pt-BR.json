@@ -48,11 +48,11 @@
             "paragraph": "Em julho de 2023, transferi-me do curso de Engenharia de Software na Universidade de Brasília para o curso de Ciência da Computação na Universidade Católica de Brasília. Por volta da mesma época, comecei a trabalhar como desenvolvedor fullstack freelancer."
         },
         "item-5": {
-            "title": "2023 → 2024: CMS para Instituto Panapaná",
-            "paragraph": "Desenvolvi um sistema de gerenciamento de cursos (CMS) para o Instituto Panapaná, uma plataforma dedicada a oferecer educação gratuita para jovens em situação de vulnerabilidade, priorizando oportunidades de aprendizagem acessíveis em vez de aprimoramentos administrativos tradicionais.",
+            "title": "2023 → 2024: LMS para Instituto Panapaná",
+            "paragraph": "Desenvolvi um sistema de gerenciamento de cursos (LMS) para o Instituto Panapaná, uma plataforma dedicada a oferecer educação gratuita para jovens em situação de vulnerabilidade, priorizando oportunidades de aprendizagem acessíveis em vez de aprimoramentos administrativos tradicionais.",
             "instituto": {
                 "title": "Instituto Panapaná",
-                "description": "Um CMS projetado para o Instituto Panapaná, focado em oferecer recursos educacionais gratuitos a jovens em circunstâncias vulneráveis, enfatizando a aprendizagem acessível em vez da administração acadêmica convencional."
+                "description": "Um LMS projetado para o Instituto Panapaná, focado em oferecer recursos educacionais gratuitos a jovens em circunstâncias vulneráveis, enfatizando a aprendizagem acessível em vez da administração acadêmica convencional."
             }
         },
         "item-6": {

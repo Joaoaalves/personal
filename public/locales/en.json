@@ -48,11 +48,11 @@
             "paragraph": "In July 2023, I transferred from the Software Engineering program at the University of Brasília to the Computer Science program at the Universidade Católica de Brasília. Around the same time, I began working as a fullstack freelance developer."
         },
         "item-5": {
-            "title": "2023 → 2024: CMS for Instituto Panapaná",
-            "paragraph": "I developed a course management system (CMS) for Instituto Panapaná, a platform dedicated to providing free education for young people in vulnerable situations, prioritizing accessible learning opportunities over traditional administrative enhancements.",
+            "title": "2023 → 2024: LMS for Instituto Panapaná",
+            "paragraph": "I developed a course management system (LMS) for Instituto Panapaná, a platform dedicated to providing free education for young people in vulnerable situations, prioritizing accessible learning opportunities over traditional administrative enhancements.",
             "instituto": {
                 "title": "Instituto Panapaná",
-                "description": "A CMS designed for Instituto Panapaná, focused on delivering free educational resources to young individuals in vulnerable circumstances, emphasizing accessible learning rather than conventional academic administration."
+                "description": "A LMS designed for Instituto Panapaná, focused on delivering free educational resources to young individuals in vulnerable circumstances, emphasizing accessible learning rather than conventional academic administration."
             }
         },
         "item-6": {
