@@ -33,7 +33,7 @@
         "**/*.ts",
         "**/*.tsx",
         ".next/types/**/*.ts",
-        "i18nConfig.js",
+
         "next.config.ks"
     ],
     "exclude": [
