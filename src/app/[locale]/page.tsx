@@ -1,37 +1,28 @@
-"use client";
+import About from "@/components/site/about";
+import Contact from "@/components/site/contact";
+import Hero from "@/components/site/hero";
+import Nav from "@/components/site/nav";
+import Projects from "@/components/site/projects";
+import SmoothScroll from "@/components/site/smooth-scroll";
+import Stack from "@/components/site/stack";
+import Story from "@/components/site/story";
+import ParticleField from "@/components/three/particle-field";
 
-import Contact from "@/components/sections/contact";
-
-import { TimeLine } from "@/components/sections/timeline";
-import Hero from "@/components/sections/hero";
-import { Skills } from "@/components/sections/skills";
-import { ScrollProvider } from "@/contexts/ScrollProvider";
-import Nav from "@/components/ui/custom/nav/Nav";
-import { FloatingDock } from "@/components/ui/floating-dock";
-import Projects from "@/components/sections/projects";
-import { ProjectsProvider } from "@/contexts/ProjectsProvider";
-import { useTranslations } from "next-intl";
-import { getProjects } from "@/data/projects";
-import MobileLanguageSelector from "@/components/ui/custom/nav/MobileLanguageSelector";
-
-export default function HomeContent() {
-    const tProjects = useTranslations("projects");
-    const projects = getProjects(tProjects);
-
+export default function Home() {
     return (
-        <div className="!min-w-screen !max-w-full !p-0 flex flex-col items-center relative overflow-x-hidden">
-            <ScrollProvider>
-                <Nav />
+        <>
+            <SmoothScroll />
+            <ParticleField />
+            <div aria-hidden className="grain" />
+            <Nav />
+            <main className="relative z-10">
                 <Hero />
-                <TimeLine />
-                <Skills />
-                <ProjectsProvider projects={projects}>
-                    <Projects />
-                </ProjectsProvider>
+                <About />
+                <Story />
+                <Projects />
+                <Stack />
                 <Contact />
-                <MobileLanguageSelector />
-                <FloatingDock />
-            </ScrollProvider>
-        </div>
+            </main>
+        </>
     );
 }
